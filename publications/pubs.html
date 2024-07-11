@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SAiDL</title>
+    <link rel="stylesheet" href="pubs.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body bgcolor="darkgray" color="white" class="ubuntu-regular">
+    <div id="header">
+        <div id="logo">
+            <img src="../assets/logo_dark.png" alt="SAiDL" width="100" height="100"> SAiDL
+        </div>
+        <div id="pages">
+            <div ><a href="../index.html" >home</a></div>
+    
+            <div><a href="projects/projects.html" >projects</a></div>
+            <div><a href="../people/people.html">people</a></div>
+            <div><a href="projects/projects.html" id="current">publications</a></div>
+            <div><a href="projects/projects.html">outreach</a></div>
+            
+        </div>
+        
+    </div>
+    <div id="bg">
+    <div id="main">
+
+        <script>
+            
+         
+            function abstract(sender,num,y) {
+                
+                var y = document.querySelectorAll("[id=abs]");
+                x = y[num]
+
+                if (x.style.display == "none" || x.style.display == "") {
+                    x.style.display = "block";
+                    sender.innerHTML = "▲";
+                } 
+                else {
+                    x.style.display = "none";
+                    sender.innerHTML = "▼"
+                }
+                }
+        </script>
+        <h3>publications</h3>
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Ashmit Khandelwal, Aditya Agrawal, Aanisha Bhattacharyya, Yaman K Singla, Somesh Singh, Uttaran Bhattacharya, Ishita Dasgupta, Stefano Petrangeli, Rajiv Ratn Shah, Changyou Chen, Balaji Krishnamurthy (2024). Large Content And Behavior Models To Understand, Simulate, And Optimize Content And Behavior- [12th International Conference on Learning Representations - Spotlight]
+                </div>
+                <div id="btn"><button onclick="abstract(this,0)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Shannon, in his seminal paper introducing information theory, divided the communication into three levels: technical, semantic, and effectivenss. While the technical level is concerned with accurate reconstruction of transmitted symbols, the semantic and effectiveness levels deal with the inferred meaning and its effect on the receiver. Thanks to telecommunications, the first level problem has produced great advances like the internet. Large Language Models (LLMs) make some progress towards the second goal, but the third level still remains largely untouched. The third problem deals with predicting and optimizing communication for desired receiver behavior. LLMs, while showing wide generalization capabilities across a wide range of tasks, are unable to solve for this. One reason for the underperformance could be a lack of "behavior tokens'' in LLMs' training corpora. Behavior tokens define receiver behavior over a communication, such as shares, likes, clicks, purchases, retweets, etc. While preprocessing data for LLM training, behavior tokens are often removed from the corpora as noise. Therefore, in this paper, we make some initial progress towards reintroducing behavior tokens in LLM training. The trained models, other than showing similar performance to LLMs on content understanding tasks, show generalization capabilities on behavior simulation, content simulation, behavior understanding, and behavior domain adaptation. Using a wide range of tasks on two corpora, we show results on all these capabilities. We call these models Large Content and Behavior Models (LCBMs). Further, to spur more research on LCBMs, we release our new Content Behavior Corpus (CBC), a repository containing communicator, message, and corresponding receiver behavior.
+            </div>
+        </div>
+        
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Victor Boutin, Thomas Fel, Lakshya Singhal, Rishav Mukherji, Akash Nagaraj, Julien Colin, Thomas Serre (2023). Diffusion Models as Artists: Are we Closing the Gap between Humans and Machines? - [40th International Conference on Machine Learning - Oral Presentation]
+                </div>
+                <div id="btn"><button onclick="abstract(this,1)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                An important milestone for AI is the development of algorithms that can produce drawings that are indistinguishable from those of humans. Here, we adapt the 'diversity vs. recognizability' scoring framework from Boutin et al, 2022 and find that one-shot diffusion models have indeed started to close the gap between humans and machines. However, using a finer-grained measure of the originality of individual samples, we show that strengthening the guidance of diffusion models helps improve the humanness of their drawings, but they still fall short of approximating the originality and recognizability of human drawings. Comparing human category diagnostic features, collected through an online psychophysics experiment, against those derived from diffusion models reveals that humans rely on fewer and more localized features. Overall, our study suggests that diffusion models have significantly helped improve the quality of machine-generated drawings; however, a gap between humans and machines remains -- in part explainable by discrepancies in visual strategies.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    S I Harini, Gautam Shroff, Ashwin Srinivasan, Prayushi Faldu, Lovekesh Vig  (2023). Neuro-symbolic Meta Reinforcement Learning for Trading - [ AAAI 2023 Workshop on Multimodal AI for Financial Forecasting ]
+                </div>
+                <div id="btn"><button onclick="abstract(this,2)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                We model short-duration (e.g. day) trading in financial markets as a sequential decision-making problem under uncertainty, with the added complication of continual concept-drift. We, therefore, employ meta reinforcement learning via the RL2 algorithm. It is also known that human traders often rely on frequently occurring symbolic patterns in price series. We employ logical program induction to discover symbolic patterns that occur frequently as well as recently, and explore whether using such features improves the performance of our meta reinforcement learning algorithm. We report experiments on real data indicating that meta-RL is better than vanilla RL and also benefits from learned symbolic features.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Shounak Naik, Rajaswa Patil, Swati Agrawal, Veeky Baths (2022). Probing Semantic Grounding in Language Models of Code with Representational Similarity Analysis - [18th International Conference on Advanced Data Mining and Applications]
+                </div>
+                <div id="btn"><button onclick="abstract(this,3)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Representational Similarity Analysis is a method from cognitive neuroscience, which helps in comparing representations from two different sources of data. In this paper, we propose using Representational Similarity Analysis to probe the semantic grounding in language models of code. We probe representations from the CodeBERT model for semantic grounding by using the data from the IBM CodeNet dataset. Through our experiments, we show that current pre-training methods do not induce semantic grounding in language models of code, and instead focus on optimizing form-based patterns. We also show that even a little amount of fine-tuning on semantically relevant tasks increases the semantic grounding in CodeBERT significantly. Our ablations with the input modality to the CodeBERT model show that using bimodal inputs (code and natural language) over unimodal inputs (only code) gives better semantic grounding and sample efficiency during semantic fine-tuning. Finally, our experiments with semantic perturbations in code reveal that CodeBERT is able to robustly distinguish between semantically correct and incorrect code. 
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Ramit Sawhney*, Ritesh Singh Soun*, Shrey Pandit*, Megh Thakkar*, Sarvagya Malaviya, Yuval Pinter (2022). CIAug: Equipping Interpolative Augmentation with Curriculum Learning - [ Annual Conference of the North American Chapter of the Association for Computational Linguistics - Main Conference]
+                </div>
+                <div id="btn"><button onclick="abstract(this,4)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Interpolative data augmentation has proven to be effective for NLP tasks. Despite its merits, the sample selection process in mixup is random, which might make it difficult for the model to generalize better and converge faster. We propose CIAug, a novel curriculum-based learning method that builds upon mixup. It leverages the relative position of samples in hyperbolic embedding space as a complexity measure to gradually mix up increasingly difficult and diverse samples along training. CIAug achieves state-of-the-art results over existing interpolative augmentation methods on 10 benchmark datasets across 4 languages in text classification and named-entity recognition tasks. It also converges and achieves benchmark F1 scores 3 times faster. We empirically analyze the various components of CIAug, and evaluate its robustness against adversarial attacks.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Ramit Sawhney*, Megh Thakkar*, Shrey Pandit*, Ritesh Singh Soun, Di Jin, Diyi Yang, Lucie Flek (2022).DMix: Adaptive Distance-aware Interpolative Mixup. [60th Annual Meeting of the Association for Computational Linguistics - Main Conference]
+                </div>
+                <div id="btn"><button onclick="abstract(this,5)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Interpolation-based regularisation methods such as Mixup, which generate virtual training samples, have proven to be effective for various tasks and modalities. We extend Mixup and propose DMIX, an adaptive distance-aware interpolative Mixup that selects samples based on their diversity in the embedding space. DMIX leverages the hyperbolic space as a similarity measure among input samples for a richer encoded representation. DMIX achieves state-of-the-art results on sentence classification over existing data augmentation methods on 8 benchmark datasets across English, Arabic, Turkish, and Hindi languages while achieving benchmark F1 scores in 3 times less number of iterations. We probe the effectiveness of DMIX in conjunction with various similarity measures and qualitatively analyze the different components. DMIX being generalizable, can be applied to various tasks, models and modalities.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Swapnil Parekh*, Yaman Singla Kumar*, Somesh Singh*, Changyou Chen, Balaji Krishnamurthy, Rajiv Ratn Shah (2021). MINIMAL: Mining Models for Data Free Universal Adversarial Triggers [AAAI-2022]
+                </div>
+                <div id="btn"><button onclick="abstract(this,6)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                It is well known that natural language models are vulnerable to adversarial attacks, which are mostly input-specific in nature. Recently, it has been shown that there also exist input-agnostic attacks in NLP models, called universal adversarial triggers. However, existing methods to craft universal triggers are data intensive. They require large amounts of data samples to generate adversarial triggers, which are typically inaccessible by attackers. For instance, previous works take 3000 data samples per class for the SNLI dataset to generate adversarial triggers. In this paper, we present a novel data-free approach, MINIMAL, to mine input-agnostic adversarial triggers from models. Using the triggers produced with our data-free algorithm, we reduce the accuracy of Stanford Sentiment Treebank's positive class from 93.6% to 9.6%. Similarly, for the Stanford Natural Language Inference (SNLI), our single-word trigger reduces the accuracy of the entailment class from 90.95% to less than 0.6\%. Despite being completely data-free, we get equivalent accuracy drops as data-dependent methods.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Gaurav Kumar Nayak, Het Shah, Anirban Chakraborty (2021). Incremental Learning for Animal Pose Estimation using RBF k-DPP. [32nd British Machine Vision Conference (BMVC)]
+                </div>
+                <div id="btn"><button onclick="abstract(this,7)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Pose estimation is the task of locating keypoints for an object of interest in an image. Animal Pose estimation is more challenging than estimating human pose due to high inter and intra class variability in animals. Existing works solve this problem for a fixed set of predefined animal categories. Models trained on such sets usually do not work well with new animal categories. Retraining the model on new categories makes the model overfit and leads to catastrophic forgetting. Thus, in this work, we propose a novel problem of “Incremental Learning for Animal Pose Estimation”. Our method uses an exemplar memory, sampled using Determinantal Point Processes (DPP) to continually adapt to new animal categories without forgetting the old ones. We further propose a new variant of k-DPP that uses RBF kernel (termed as “RBF k-DPP”) which gives more gain in performance over traditional k-DPP. Due to memory constraints, the limited number of exemplars along with new class data can lead to class imbalance. We mitigate it by performing image warping as an augmentation technique. This helps in crafting diverse poses, which reduces overfitting and yields further improvement in performance. The efficacy of our proposed approach is demonstrated via extensive experiments and ablations where we obtain significant improvements over state-of-the-art baseline methods. 
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Vedant Shah, Gautam Shroff (2021).Forecasting Market Prices using DL with Data Augmentation and Meta-learning: ARIMA still wins!. [I (Still) Can’t Believe It’s Not Better Workshop, NeurIPS 2021]
+                </div>
+                <div id="btn"><button onclick="abstract(this,8)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Deep-learning techniques have been successfully used for time-series forecasting and have often shown superior performance on many standard benchmark datasets as compared to traditional techniques. Here we present a comprehensive and comparative study of performance of deep-learning techniques for forecasting prices in financial markets. We benchmark state-of-the-art deep-learning baselines, such as NBeats, etc., on data from currency as well as stock markets. We also generate synthetic data using a fuzzy-logic based model of demand driven by technical rules such as moving averages, which are often used by traders. We benchmark the baseline techniques on this synthetic data as well as use it for data augmentation. We also apply gradient-based meta-learning to account for non-stationarity of financial time-series. Our extensive experiments notwithstanding, the surprising result is that the standard ARIMA models outperforms deep-learning even using data augmentation or meta-learning. We conclude by speculating as to why this might be the case. 
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Souradeep Chakraborty, Rahul Bajpai, Naveen Gupta (2021). R2D2D - Using Deep Learning for Caching in 5G D2D Communications [IEEE VTC 21 Spring]
+                </div>
+                <div id="btn"><button onclick="abstract(this,9)">▼</button></div>
+            </div>
+            <div id="abs">
+            </div>
+        </div>
+        
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Urvil Jivani, Omatharv Vaidya, Anwesh Bhattacharya, Snehanshu Saha (2021). A Swarm Variant for the Schrödinger Solver [International Joint Conference of Neural networks, 2021]. 
+                </div>
+                <div id="btn"><button onclick="abstract(this,10)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                This paper introduces application of the Exponentially Averaged Momentum Particle Swarm Optimization (EM-PSO) as a derivative-free optimizer for Neural Networks. It adopts PSO's major advantages such as search space exploration and higher robustness to local minima compared to gradient-descent optimizers such as Adam. Neural network based solvers endowed with gradient optimization are now being used to approximate solutions to Differential Equations. Here, we demonstrate the novelty of EM-PSO in approximating gradients and leveraging the property in solving the Schrödinger equation, for the Particle-in-a-Box problem. We also provide the optimal set of hyper-parameters supported by mathematical proofs, suited for our algorithm. 
+            </div>
+        </div>
+
+        
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Ramit Sawhney, Megh Thakkar, Shrey Pandit, Debdoot Mukherjee, and Lucie Flek (2021). DMix: Distance Constrained Interpolative Mixup [Extended Abstract, Multilingual Representation Learning Workshop, EMNLP 2021] 
+                </div>
+                <div id="btn"><button onclick="abstract(this,11)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Interpolation-based regularisation methods have proven to be effective for various tasks and modalities. Mixup is a data augmentation method that generates virtual training samples from convex combinations of individual inputs and labels. We extend Mixup and propose, distance-constrained interpolative Mixup for sentence classification leveraging the hyperbolic space. This method achieves state-of-the-art results on sentence classification over existing data augmentation methods across datasets in four languages.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Rajaswa Patil, Jasleen Dhillon, Siddhant Mahurkar, Saumitra Kulkarni, Manav Malhotra, Veeky Baths (2021). Vyākarana: A Colorless Green Benchmark for Syntactic Evaluation in Indic Languages [Multilingual Representation Learning Workshop, EMNLP 2021] 
+                </div>
+                <div id="btn"><button onclick="abstract(this,12)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                While there has been significant progress towards developing NLU resources for Indic languages, syntactic evaluation has been relatively less explored. Unlike English, Indic languages have rich morphosyntax, grammatical genders, free linear word-order, and highly inflectional morphology. In this paper, we introduce Vyākarana: a benchmark of Colorless Green sentences in Indic languages for syntactic evaluation of multilingual language models. The benchmark comprises four syntax-related tasks: PoS Tagging, Syntax Tree-depth Prediction, Grammatical Case Marking, and Subject-Verb Agreement. We use the datasets from the evaluation tasks to probe five multilingual language models of varying architectures for syntax in Indic languages. Due to its prevalence, we also include a code-switching setting in our experiments. Our results show that the token-level and sentence-level representations from the Indic language models (IndicBERT and MuRIL) do not capture the syntax in Indic languages as efficiently as the other highly multilingual language models. Further, our layer-wise probing experiments reveal that while mBERT, DistilmBERT, and XLM-R localize the syntax in middle layers, the Indic language models do not show such syntactic localization. 
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Abheesht Sharma, Gunjan Chhablani, Harshit Pandey, Rajaswa Patil (2021). DRIFT: A Toolkit for Diachronic Analysis of Scientific Literature [Accepted as a Systems Demonstration Paper at EMNLP 2021]
+                </div>
+                <div id="btn"><button onclick="abstract(this,13)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                In this work, we present to the NLP community, and to the wider research community as a whole, an application for the diachronic analysis of research corpora. We open source an easy-to-use tool coined: DRIFT, which allows researchers to track research trends and development over the years. The analysis methods are collated from well-cited research works, with a few of our own methods added for good measure. Succinctly put, some of the analysis methods are: keyword extraction, word clouds, predicting declining/stagnant/growing trends using Productivity, tracking bi-grams using Acceleration plots, finding the Semantic Drift of words, tracking trends using similarity, etc. To demonstrate the utility and efficacy of our tool, we perform a case study on the cs.CL corpus of the arXiv repository and draw inferences from the analysis methods. The toolkit and the associated code are available here: this URL. 
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Ajay Subramanian, Sharad Chitlangia, Veeky Baths. (2021).Reinforcement Learning and its Connections with Neuroscience and Psychology  [Elsevier Neural Networks]
+                </div>
+                <div id="btn"><button onclick="abstract(this,14)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Reinforcement learning methods have been recently been very successful in complex sequential tasks like playing Atari games, Go and Poker. Through minimal input from humans, these algorithms are able to learn to perform complex tasks from scratch, just through interaction with their environment. While there certainly has been considerable independent innovation in the area, many core ideas in RL are inspired by animal learning and psychology. Moreover, these algorithms are now helping advance neuroscience research by serving as a computational model for many characteristic features of brain functioning. In this context, we review a number of findings that establish evidence of key elements of the RL problem and solution being represented in regions of the brain.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Vedant Shah, Anmol Agarwal, Tanmay Tulsidas Verlekar, Raghavendra Singh (2021).  Adapting Deep Learning Models for Pedestrian-Detection to Low-Light Conditions without Re-training [TradiCV Workshop, ICCV 2021]
+                </div>
+                <div id="btn"><button onclick="abstract(this,15)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Pedestrian detection is an integral component in many automated surveillance applications. Several state-of-theart systems exist for pedestrian detection, however most of them are ineffective in low-light conditions. Systems specifically designed for low-light conditions require special equipment, such as depth sensing cameras. However, a lack of large publicly available depth datasets, prevents their use in training deep learning models. In this paper we propose a pre-processing pipeline, which enables any existing normal-light pedestrian detection system to operate in low-light conditions. It is based on a signal-processing and traditional computer-vision techniques, such as the use of signal strength of a depth sensing camera (amplitude images) and robust principal component analysis (RPCA). The information in an amplitude image is less noisy, and is of lower dimension than depth data, marking it computationally inexpensive to process. RPCA processes these amplitude images to generate foreground masks, which represent potential regions of interest. These masks can then be used to rectify the RGB images to increase the contrast between the foreground and background, even in low-light conditions. We show that these rectified RGB images can be used by normal-light deep learning models for pedestrian-detection, without any additional training. To test this hypothesis, we use the ’Oyla Low-Light Pedestrian Benchmark’ (OLPB) dataset. Our results using two state-of-the art deep learning models (CrowdDet and CenterNet) show: a) The deep models perform poorly as pedestrian detectors in low-light conditions; b) Equipping the deep-networks with our pre-processing pipeline significantly improves the average precision for pedestriandetection of the models without any re-training. Taken together, the results suggest that our approach could act as a useful pre-processor for deep learning models that aren’t specially designed for pedestrian-detection in lowlight conditions. 
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Pranav Mahajan, Veeky Baths. (2021).  Acoustic and Language Based Deep Learning Approaches for Alzheimer's Dementia Detection From Spontaneous Speech [Frontiers in Aging Neuroscience]
+                </div>
+                <div id="btn"><button onclick="abstract(this,16)">▼</button></div>
+            </div>
+            <div id="abs">
+
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Mehul Rastogi, Sen Lu, Nafiul Islam, Abhronil Sengupta .(2021).  On the Self-Repair Role of Astrocytes in STDP Enabled Unsupervised SNNs [Frontiers in Neuroscience]
+                </div>
+                <div id="btn"><button onclick="abstract(this,17)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Neuromorphic computing is emerging to be a disruptive computational paradigm that attempts to emulate various facets of the underlying structure and functionalities of the brain in the algorithm and hardware design of next-generation machine learning platforms. This work goes beyond the focus of current neuromorphic computing architectures on computational models for neuron and synapse to examine other computational units of the biological brain that might contribute to cognition and especially self-repair. We draw inspiration and insights from computational neuroscience regarding functionalities of glial cells and explore their role in the fault-tolerant capacity of Spiking Neural Networks (SNNs) trained in an unsupervised fashion using Spike-Timing Dependent Plasticity (STDP). We characterize the degree of self-repair that can be enabled in such networks with varying degree of faults ranging from 50 to 90% and evaluate our proposal on the MNIST and Fashion-MNIST datasets.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Ashwin Vaswani*, Rijul Ganguly*, Het Shah*, Sharan Ranjit S.*, Shrey Pandit, Samruddhi Bothara. (2020). Whatif Challenge: An Autoencoder Based Approach to Simulate Football Games [Accepted at 7th Workshop on Machine Learning and Data Mining for Sports Analytics 2020]
+                </div>
+                <div id="btn"><button onclick="abstract(this,18)">▼</button></div>
+            </div>
+            <div id="abs">
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Rajaswa Patil*, Somesh Singh*, Swati Agarwal. (2020).  BPGC at SemEval-2020 Task 11: Propaganda Detection in News Articles with Multi-Granularity Knowledge Sharing and Linguistic Features based Ensemble Learning [SemEval Workshop, COLING 2020]
+                </div>
+                <div id="btn"><button onclick="abstract(this,19)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Propaganda spreads the ideology and beliefs of like-minded people, brainwashing their audiences, and sometimes leading to violence. SemEval 2020 Task-11 aims to design automated systems for news propaganda detection. Task-11 consists of two sub-tasks, namely, Span Identification - given any news article, the system tags those specific fragments which contain at least one propaganda technique; and Technique Classification - correctly classify a given propagandist statement amongst 14 propaganda techniques. For sub-task 1, we use contextual embeddings extracted from pre-trained transformer models to represent the text data at various granularities and propose a multi-granularity knowledge sharing approach. For sub-task 2, we use an ensemble of BERT and logistic regression classifiers with linguistic features. Our results reveal that the linguistic features are the strong indicators for covering minority classes in a highly imbalanced dataset.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Siddhant Mahurkar*, Rajaswa Patil*. (2020). LRG at SemEval-2020 Task 7: Assessing the Ability of BERT and Derivative Models to Perform Short-Edits based Humor Grading [SemEval Workshop, COLING 2020]
+                </div>
+                <div id="btn"><button onclick="abstract(this,20)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                In this paper, we assess the ability of BERT and its derivative models (RoBERTa, DistilBERT, and ALBERT) for short-edits based humor grading. We test these models for humor grading and classification tasks on the Humicroedit and the FunLines dataset. We perform extensive experiments with these models to test their language modeling and generalization abilities via zero-shot inference and cross-dataset inference based approaches. Further, we also inspect the role of self-attention layers in humor-grading by performing a qualitative analysis over the self-attention weights from the final layer of the trained BERT model. Our experiments show that all the pre-trained BERT derivative models show significant generalization capabilities for humor-grading related tasks.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Rajaswa Patil*, Veeky Baths. (2020).  CNRL at SemEval-2020 Task 5: Modelling Causal Reasoning in Language with Multi-Head Self-Attention Weights based Counterfactual Detection [SemEval Workshop, COLING 2020]
+                </div>
+                <div id="btn"><button onclick="abstract(this,21)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                In this paper, we describe an approach for modelling causal reasoning in natural language by detecting counterfactuals in text using multi-head self-attention weights. We use pre-trained transformer models to extract contextual embeddings and self-attention weights from the text. We show the use of convolutional layers to extract task-specific features from these self-attention weights. Further, we describe a fine-tuning approach with a common base model for knowledge sharing between the two closely related sub-tasks for counterfactual detection. We analyze and compare the performance of various transformer models in our experiments. Finally, we perform a qualitative analysis with the multi-head self-attention weights to interpret our models' dynamics.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Srivatsan Krishnan*, Sharad Chitlangia*, Maximilian Lam*, Zishen Wan, Alexandra Faust, Vijay Janapa Reddi. (2020). Quantized Reinforcement Learning [Accepted at ReCoML Workshop, MLSys 2020]
+                </div>
+                <div id="btn"><button onclick="abstract(this,22)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Recent work has shown that quantization can help reduce the memory, compute, and energy demands of deep neural networks without significantly harming their quality. However, whether these prior techniques, applied traditionally to image-based models, work with the same efficacy to the sequential decision making process in reinforcement learning remains an unanswered question. To address this void, we conduct the first comprehensive empirical study that quantifies the effects of quantization on various deep reinforcement learning policies with the intent to reduce their computational resource demands. We apply techniques such as post-training quantization and quantization aware training to a spectrum of reinforcement learning tasks (such as Pong, Breakout, BeamRider and more) and training algorithms (such as PPO, A2C, DDPG, and DQN). Across this spectrum of tasks and learning algorithms, we show that policies can be quantized to 6-8 bits of precision without loss of accuracy. We also show that certain tasks and reinforcement learning algorithms yield policies that are more difficult to quantize due to their effect of widening the models' distribution of weights and that quantization aware training consistently improves results over post-training quantization and oftentimes even over the full precision baseline. Finally, we demonstrate real-world applications of quantization for reinforcement learning. We use half-precision training to train a Pong model 50% faster, and we deploy a quantized reinforcement learning based navigation policy to an embedded system, achieving an 18×speedup and a 4× reduction in memory usage over an unquantized policy.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Ajay Subramanian*, Rajaswa Patil*, Veeky Baths. (2019). Word2Brain2Image: Visual Reconstruction from Spoken Word Representations [Accepted for Poster Presentation, ACCS 2019]
+                </div>
+                <div id="btn"><button onclick="abstract(this,23)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Recent work in cognitive neuroscience has aimed to better understand how the brain responds to external stimuli. Extensive study is being done to gauge the involvement of various regions of the brain in the processing of external stimuli. A study by Ostarek et al. has produced experimental evidence of the involvement of low-level visual representations in spoken word processing, using Continuous Flash Suppression (CFS). For example, hearing the word ‘car’ induces a visual representation of a car in extrastriate areas of the visual cortex that seems to have a spatial resolution of some kind. Though the structure of these areas of the brain has been extensively studied, research hasn’t really delved into the functional aspects. In this work, we aim to take this a step further by experimenting with generative models such as Variational Autoencoders (VAEs) (Kingma et al 2013) and Generative Adversarial Networks (GANs) (Goodfellow et al. 2014) to generate images purely from the EEG signals induced by listening to spoken words of objects.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Rajaswa Patil*, Siddhant Mahurkar. (2019). Citta: A Lite Semantic Recommendation Framework for Digital Libraries [Best Student Poster Award, KEDL 2019]
+                </div>
+                <div id="btn"><button onclick="abstract(this,24)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Most of the recommendation and search frameworks in Digital Libraries follow a keyword-based approach to resolve text-based search queries. Keyword-based methods usually fail to capture the semantic aspects of the user’s query and often lead to a misleading set of results. In this work, we propose an efficient and content-sentiment aware semantic recommendation framework, Citta. The framework is designed with the BERT language model. It is designed to retrieve semantically related reading recommendations with short input queries and shorter response times. We test the proposed framework on the CMU Book Summary Dataset and discuss the observed advantages and shortcomings of the framework.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Souradeep Chakroborty. (2019). Capturing financial markets to apply deep reinforcement learning [Accepted at 9th India Finance Conference held at IIM-A]
+                </div>
+                <div id="btn"><button onclick="abstract(this,25)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                In this paper we explore the usage of deep reinforcement learning algorithms to automatically generate consistently profitable, robust, uncorrelated trading signals in any general financial market. In order to do this, we present a novel Markov decision process (MDP) model to capture the financial trading markets. We review and propose various modifications to existing approaches and explore different techniques like the usage of technical indicators, to succinctly capture the market dynamics to model the markets. We then go on to use deep reinforcement learning to enable the agent (the algorithm) to learn how to take profitable trades in any market on its own, while suggesting various methodology changes and leveraging the unique representation of the FMDP (financial MDP) to tackle the primary challenges faced in similar works. Through our experimentation results, we go on to show that our model could be easily extended to two very different financial markets and generates a positively robust performance in all conducted experiments.
+            </div>
+        </div>
+
+        <h3>preprints</h3>
+        
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Dianbo Liu, Vedant Shah, Oussama Boussif, Cristian Meo, Anirudh Goyal, Tianmin Shu, Michael Mozer, Nicolas Heess, Yoshua Bengio  (2022). Coordinating Policies Among Multiple Agents via an Intelligent Communication Channel [arXiv]
+                </div>
+                <div id="btn"><button onclick="abstract(this,26)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                In Multi-Agent Reinforcement Learning (MARL), specialized channels are often introduced that allow agents to communicate directly with one another. In this paper, we propose an alternative approach whereby agents communicate through an intelligent facilitator that learns to sift through and interpret signals provided by all agents to improve the agents' collective performance. To ensure that this facilitator does not become a centralized controller, agents are incentivized to reduce their dependence on the messages it conveys, and the messages can only influence the selection of a policy from a fixed set, not instantaneous actions given the policy. We demonstrate the strength of this architecture over existing baselines on several cooperative MARL environments. 
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Yaman Singla Kumar*, Swapnil Parekh*, Somesh Singh*, Junyi Jessy Li, Rajiv Ratn Shah, Changyou Chen (2021). AES Systems Are Both Overstable And Oversensitive: Explaining Why And Proposing Defenses [arXiv]
+                </div>
+                <div id="btn"><button onclick="abstract(this,27)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Deep-learning based Automatic Essay Scoring (AES) systems are being actively used by states and language testing agencies alike to evaluate millions of candidates for life-changing decisions ranging from college applications to visa approvals. However, little research has been put to understand and interpret the black-box nature of deep-learning based scoring algorithms. Previous studies indicate that scoring models can be easily fooled. In this paper, we explore the reason behind their surprising adversarial brittleness. We utilize recent advances in interpretability to find the extent to which features such as coherence, content, vocabulary, and relevance are important for automated scoring mechanisms. We use this to investigate the oversensitivity i.e., large change in output score with a little change in input essay content) and overstability i.e., little change in output scores with large changes in input essay content) of AES. Our results indicate that autoscoring models, despite getting trained as "end-to-end" models with rich contextual embeddings such as BERT, behave like bag-of-words models. A few words determine the essay score without the requirement of any context making the model largely overstable. This is in stark contrast to recent probing studies on pre-trained representation learning models, which show that rich linguistic features such as parts-of-speech and morphology are encoded by them. Further, we also find that the models have learnt dataset biases, making them oversensitive. To deal with these issues, we propose detection-based protection models that can detect oversensitivity and overstability causing samples with high accuracies. We find that our proposed models are able to detect unusual attribution patterns and flag adversarial samples successfully.
+            </div>
+        </div>
+
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Arijit Gupta, Rajaswa Patil, Veeky Baths (2021). Using Diachronic Distributed Word Representations as Models of Lexical Development in Children [arXiv]
+                </div>
+                <div id="btn"><button onclick="abstract(this,28)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Recent work has shown that distributed word representations can encode abstract semantic and syntactic information from child-directed speech. In this paper, we use diachronic distributed word representations to perform temporal modeling and analysis of lexical development in children. Unlike all previous work, we use temporally sliced speech corpus to learn distributed word representations of child and child-directed speech. Through our modeling experiments, we demonstrate the dynamics of growing lexical knowledge in children over time, as compared against a saturated level of lexical knowledge in child-directed adult speech. We also fit linear mixed-effects models with the rate of semantic change in the diachronic representations and word frequencies. This allows us to inspect the role of word frequencies towards lexical development in children. Further, we perform a qualitative analysis of the diachronic representations from our model, which reveals the categorization and word associations in the mental lexicon of children. 
+            </div>
+        </div>
+
+        
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Pranav Mahajan, Advait Rane, Swapna Sasi, Basabdatta Sen Bhattacharya (2021). Quantifying Synchronization in a Biologically Inspired Neural Network [arXiv]
+                </div>
+                <div id="btn"><button onclick="abstract(this,29)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                We present a collated set of algorithms to obtain objective measures of synchronisation in brain time-series data. The algorithms are implemented in MATLAB; we refer to our collated set of 'tools' as SyncBox. Our motivation for SyncBox is to understand the underlying dynamics in an existing population neural network, commonly referred to as neural mass models, that mimic Local Field Potentials of the visual thalamic tissue. Specifically, we aim to measure the phase synchronisation objectively in the model response to periodic stimuli; this is to mimic the condition of Steady-state-visually-evoked-potentials (SSVEP), which are scalp Electroencephalograph (EEG) corresponding to periodic stimuli. We showcase the use of SyncBox on our existing neural mass model of the visual thalamus. Following our successful testing of SyncBox, it is currently being used for further research on understanding the underlying dynamics in enhanced neural networks of the visual pathway.
+            </div>
+        </div>
+
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Het Shah, Avishree Khare*, Neelay Shah*, Khizir Siddiqui* . (2020). KD-Lib: A PyTorch library for Knowledge Distillation, Pruning and Quantization [arXiv]
+                </div>
+                <div id="btn"><button onclick="abstract(this,30)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                In recent years, the growing size of neural networks has led to a vast amount of research concerning compression techniques to mitigate the drawbacks of such large sizes. Most of these research works can be categorized into three broad families : Knowledge Distillation, Pruning, and Quantization. While there has been steady research in this domain, adoption and commercial usage of the proposed techniques has not quite progressed at the rate. We present KD-Lib, an open-source PyTorch based library, which contains state-of-the-art modular implementations of algorithms from the three families on top of multiple abstraction layers. KD-Lib is model and algorithm-agnostic, with extended support for hyperparameter tuning using Optuna and Tensorboard for logging and monitoring. The library can be found at - https://github.com/SforAiDl/KD Lib 
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Megh Thakkar, Vishwa Shah, Ramit Sawhney and Debdoot Mukherjee (2021). Sequence Mixup for Zero-Shot Cross-Lingual Part-Of-Speech Tagging [Extended Abstract, Multilingual Representation Learning Workshop, EMNLP 2021]. 
+                </div>
+                <div id="btn"><button onclick="abstract(this,31)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                There have been efforts in cross-lingual transfer learning for various tasks. We present an approach utilizing an interpolative data augmentation method, Mixup, to improve the generalizability of models for part-of-speech tagging trained on a source language, improving its performance on unseen target languages. Through experiments on ten languages with diverse structures and language roots, we put forward its applicability for downstream zeroshot cross-lingual tasks. 
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+    <div id="footer">
+        <div>
+            <a href=""><img src="../assets/github_dark.png" alt="github" width="50" height="50"></a>
+            <a href=""><img src="../assets/twitter_dark.png" alt="twitter" width="55" height="50"></a>
+            <a href=""><img src="../assets/youtube_dark.png" alt="youtube" width="50" height="50"></a>
+            <a href=""><img src="../assets/linkedin_dark.png" alt="linkedin" width="50" height="50"></a>
+        </div>
+    </div>
+</body>
+</html>

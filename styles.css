@@ -1,11 +1,28 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: Andale Mono, Helvetica,Arial, sans-serif;
+    font-family: Roboto,sans-serif;
+    font-weight:300;
+    font-style: normal;
     background-color: white;
     color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
 #header{
     display: flex;
     flex-direction: row;
@@ -21,6 +38,7 @@ body{
     border-bottom: 2px solid purple;
     margin: 0;
 }
+
 #pages{
     display: flex;
     flex-direction: row;
@@ -34,6 +52,7 @@ body{
     gap: 1vw;
     font-size: 30px;
     margin-left: 5vw;
+    font-family: Quicksand, sans-serif;
 }
 
 body {
@@ -77,14 +96,21 @@ body {
 
 #header >  div > div > a{
     font-size: 20px;
-    font-family: Andale Mono, Helvetica,Arial, sans-serif;
+    font-family: Quicksand, sans-serif;
+    font-weight: bold;
     /* color: lightcyan; */
 }
 
 
 #bg{
-    background-image: url("assets/background.gif");
+    background-image: url("assets/background4.gif");
+    padding-bottom:35vh;
+    margin: 0;
 
+}
+
+.marquee{
+    padding-bottom: 20vh;
 }
 
 #main{
@@ -93,6 +119,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
+
 }
 
 
@@ -134,4 +161,11 @@ a:hover{
 
 #current{
     color: hotpink;
+}
+
+p{
+    font-size: 20px;
+    font-family: Quicksand, sans-serif;
+    font-weight: bold;
+    color: purple;
 }
