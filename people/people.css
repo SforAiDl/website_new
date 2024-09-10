@@ -143,6 +143,11 @@ a:hover{
 }
 
 
+.proj_desc>a{
+    color: black;
+    text-decoration: underline;
+}
+
 
 #footer{
 
