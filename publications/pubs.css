@@ -164,6 +164,10 @@ a:hover{
    display: none;
 }
 
+/* #title > a{
+    color: black;
+} */
+
 #projs{
     display: flex;
     flex-direction: column;
