@@ -1,62 +1,351 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>SAiDL</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - SAiDL</title>
+    <link rel="icon" type="image/png" href="../assets/saidl_logo_title.png">
     <link rel="stylesheet" href="pubs.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@300;400;500;600;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body bgcolor="darkgray" color="white" class="ubuntu-regular">
+<body>
     <div id="header">
         <div id="logo">
-            <img src="../assets/logo_dark.png" alt="SAiDL" width="100" height="100"> SAiDL
+            <a href="../">
+                <img src="../assets/logo_dark.png" alt="SAiDL Logo"> 
+                <span>SAiDL</span>
+            </a>
         </div>
+        <button id="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <div id="pages">
-            <div ><a href="../index.html" >home</a></div>
-    
-            <div><a href="projects/projects.html" >projects</a></div>
-            <div><a href="../people/people.html">people</a></div>
-            <div><a href="projects/projects.html" id="current">publications</a></div>
-            <div><a href="projects/projects.html">outreach</a></div>
-            
+            <div><a href="../">home</a></div>
+            <div><a href="../projects">projects</a></div>
+            <div><a href="../people">people</a></div>
+            <div><a href="../publications" id="current">publications</a></div>
+            <div><a href="../outreach">outreach</a></div>
         </div>
-        
     </div>
-    <div id="bg">
-    <div id="main">
+    <div id="sidebar-overlay"></div>
 
+    <div id="main">
         <script>
-            
-         
-            function abstract(sender,num,y) {
-                
-                var y = document.querySelectorAll("[id=abs]");
-                x = y[num]
+            function abstract(sender, num, y) {
+                // Find the corresponding abstract div by walking the DOM from the button
+                var topbar = sender.closest('#topbar');
+                if (!topbar) return;
+                var paper = topbar.parentElement;
+                var x = paper.querySelector('[id=abs]');
+
+                if (!x) return;
 
                 if (x.style.display == "none" || x.style.display == "") {
                     x.style.display = "block";
                     sender.innerHTML = "▲";
-                } 
-                else {
+                } else {
                     x.style.display = "none";
-                    sender.innerHTML = "▼"
+                    sender.innerHTML = "▼";
                 }
-                }
+            }
         </script>
-        <h3>publications</h3>
+        <h2>publications</h2>
         <div id="paper">
             <div id="topbar">
                 <div id="title">
-                    <b>Ashmit Khandelwal</b>, <b>Aditya Agrawal</b>, Aanisha Bhattacharyya, Yaman K Singla, <b>Somesh Singh</b>, Uttaran Bhattacharya, Ishita Dasgupta, Stefano Petrangeli, Rajiv Ratn Shah, Changyou Chen, Balaji Krishnamurthy (2024). <a href="https://arxiv.org/abs/2309.00359"><u>Large Content And Behavior Models To Understand, Simulate, And Optimize Content And Behavior</u></a>- [12th International Conference on Learning Representations - Spotlight]
+                Riya Singha, Aryan Amit Barsainyana, Rida Irfan, Connor Joseph Amorin, Stewart He, Tony Davis, Arun Thiagarajan, Shiva Sankaran, Seyone Chithrananda, Walid Ahmada, Derek Jones, Kevin McLoughlin, Hyojin Kim, Anoushka Bhutani, <b>Shreyas Vinaya Sathyanarayana</b>, Venkat Viswanathan, Jonathan E. Allen, Bharath Ramsundar (2025). <a href="https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/688b04ca23be8e43d6fe2c69/original/chem-ber-ta-3-an-open-source-training-framework-for-chemical-foundation-models.pdf"><u>ChemBERTa-3: An open-source training framework for chemical foundation models</u></a>
                 </div>
                 <div id="btn"><button onclick="abstract(this,0)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                The rapid advancement of machine learning in computational chemistry has opened new doors
+                for designing molecules, predicting molecular properties, and discovering novel materials. How-
+                ever, building scalable and robust models for molecular machine learning remains a significant
+                challenge due to the vast size and complexity of chemical space. Recent advances in chemical
+                foundation models hold considerable promise for addressing these challenges, but such models
+                remain difficult to train and are often fully or partially proprietary. For this reason, we introduce
+                ChemBERTa-3, an open source training and benchmarking framework designed to train and fine-
+                tune large-scale chemical foundation models. ChemBERTa-3 provides: (i) unified, reproducible
+                infrastructure for model pretraining and fine-tuning, (ii) systematic benchmarking tooling to evalu-
+                ate proposed chemical foundation model architectures on tasks from the MoleculeNet suite, and
+                (iii) fully open release of model weights, training configurations, and deployment workflows. Our
+                experiments demonstrate that although both graph-based and transformer-based architectures
+                perform well at small scale, transformer-based models are considerably easier to scale. We also
+                discuss how to overcome the numerous challenges that arise when attempting to reproducibly
+                construct large chemical foundation models, ranging from subtle benchmarking issues to training
+                instabilities. We test ChemBERTa-3 infrastructure in both an AWS-based Ray deployment and
+                in an on-premise high-performance computing cluster to verify the reproducibility of the frame-
+                work and results. We anticipate that ChemBERTa-3 will serve as a foundational building block for
+                next-generation chemical foundation models and for the broader project of creating open source
+                LLMs for scientific applications. In support of reproducible and extensible science, we have open
+                sourced all ChemBERTa3 models and our Ray cluster configurations.
+            </div>
+        </div>
+
+        <div id="paper">
+        <div id="topbar">
+        <div id="title">
+        <b>Shreyas Vinaya Sathyanarayana</b>, Seonghwan Seo, Minsu Kim, Tony Shen, Martin (et al.). (2025). <a href="https://arxiv.org/pdf/2507.07060"><u>DeepRetro: Retrosynthetic Pathway Discovery using Iterative LLM Reasoning</u></a>
+        </div>
+        <div id="btn"><button onclick="abstract(this,1)">▼</button></div>
+        </div>
+        <div id="abs">
+        <center><b>Abstract</b></center>
+        <br>
+        The synthesis of complex natural products remains one of the grand challenges
+        of organic chemistry. We present DeepRetro, a major advancement in com-
+        putational retrosynthesis that enables the discovery of viable synthetic routes
+        for complex molecules typically considered beyond the reach of existing ret-
+        rosynthestic methods. DeepRetro is a novel, open-source framework that tightly
+        integrates large language models (LLMs), traditional retrosynthetic engines, and
+        expert human feedback in an iterative design loop. Prior approaches rely solely on
+        template-based methods or unconstrained LLM outputs. In contrast, DeepRetro
+        combines the precision of template-based methods with the generative flexibil-
+        ity of LLMs, controlled by rigorous chemical validity checks and enhanced by
+        recursive refinement. This hybrid system dynamically explores and revises syn-
+        thetic pathways, guided by both algorithmic checks and expert chemist feedback
+        through an interactive user interface. While DeepRetro achieves strong perfor-
+        mance on standard retrosynthesis benchmarks, its true strength lies in its ability to propose novel, viable pathways to highly complex natural products—targets
+        that have historically eluded automated planning. Through detailed case studies,
+        we illustrate how this approach enables new routes for total synthesis and facili-
+        tates human-machine collaboration in organic chemistry. Beyond retrosynthesis,
+        DeepRetro represents a working model for how to leverage LLMs in scientific
+        discovery. We provide a transparent account of the system's design, algorithms,
+        and human-feedback loop, enabling broad adaptation across scientific domains.
+        By releasing DeepRetro as an open-source tool, we aim to empower chemists
+        to tackle increasingly ambitious synthetic targets, accelerating progress in drug
+        discovery, materials design, and beyond.
+        </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    <b>Karan Bania</b>, <b>Harshvardhan Mestha</b>, Tanmay Tulsidas Verlekar. (2025). <a href="https://ceur-ws.org/Vol-3985/paper4.pdf"><u>Exploring the Missing Medical Context in Generated Radiology Reports</u></a>
+                </div>
+                <div id="btn"><button onclick="abstract(this,12)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Recent advancements in multimodal LLMs have allowed its use in radiology, where, given an X-ray image, the
+                report can be generated automatically. The state-of-the-art explores LLMs for this task through prompting or
+                fine-tuning. The emphasis in such cases is to improve the syntax and context of the report with respect to
+                natural language. This paper proposes that LLMS are unable to understand the medical context in images and in
+                reports. Thus, the accuracy of the generated reports' medical context requires further evaluation. This paper
+                uses a pre-trained GPT-4o, Qwen2-VL-7B, and a fine-tuned LLaMA-2 model to demonstrate that these LLMs
+                can identify the input images as chest X-rays but are poor at identifying pathologies, even when fine-tuned. It
+                then attempts to address this problem by proposing a pipeline that allows the LLMs access to a discriminative
+                model that can classify pathologies present in a chest X-ray. The additional context of pathology labels allows
+                the LLMs to generate more accurate reports. A second contribution of the paper involves the assessment of
+                the generated reports. It illustrates that traditional metrics, such as the BERTScore, are ineffective in assessing
+                generated medical reports. It then presents an LLM-as-a-judge that successfully compares generated and ground
+                truth reports.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    <b>Ankita Vaishnobi Bisoi</b>, <b>Shreyas V.</b>, Jose Siguenza, Bharath Ramsundar. (2025). <a href="https://openreview.net/pdf?id=jWZV6hWCeX"><u>DeepChem-Variant: A Modular Open Source Framework for Genomic Variant Calling</u></a>
+                </div>
+                <div id="btn"><button onclick="abstract(this,6)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Variant calling is a fundamental task in genomic
+                research for detecting genetic variations such as
+                single nucleotide polymorphisms (SNPs) and in-
+                sertions or deletions (indels). This paper presents
+                an enhancement to DeepChem (Ramsundar et al.,
+                2019), a widely used open source drug discov-
+                ery framework, through the integration of Deep-
+                Variant (Poplin et al., 2018). We introduce
+                DeepChem-Variant, a variant calling pipeline that
+                leverages DeepVariant's convolutional neural net-
+                work (CNN) architecture to improve variant detec-
+                tion accuracy and reliability. DeepChem-Variant
+                has stages for realignment of sequencing reads,
+                candidate variant detection, and pileup image
+                generation, followed by variant classification us-
+                ing either the original modified Inception V3
+                model or our novel MobileNetV2 implementa-
+                tion. We performed 3 case studies to validate
+                our approach. Our work also contributes opti-
+                mized utility functions for genomic data formats,
+                including enhanced DataLoaders for BAM, SAM,
+                and CRAM files, and an optimized FASTALoader.
+                These implementations collectively provide a
+                modular and extensible variant calling framework
+                within DeepChem, enabling tighter integration of
+                DeepChem's drug discovery infrastructure with
+                bioinformatics pipelines for future research.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    <b>Harshvardhan Mestha*</b>, <b>Karan Bania*</b>, <b>Shreyas Vinaya Sathyanarayana</b>, Sidong Liu, Ashwin Srinivasan. (2025). <a href="https://arxiv.org/pdf/2410.20600?"><u>Multi-Turn Human–LLM Interaction Through the Lens of a Two-Way Intelligibility Protocol</u></a>
+                </div>
+                <div id="btn"><button onclick="abstract(this,3)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Our interest is in the design of software systems involving a human-expert
+                interacting-using natural language-with a large language model (LLM) on data
+                analysis tasks. For complex problems, it is possible that LLMs can harness human
+                expertise and creativity to find solutions that were otherwise elusive. On one level,
+                this interaction takes place through multiple turns of prompts from the human and
+                responses from the LLM. Here we investigate a more structured approach based on
+                an abstract protocol described in [3] for interaction between agents. The protocol
+                is motivated by a notion of “two-way intelligibility” and is modelled by a pair
+                of communicating finite-state machines. We provide an implementation of the
+                protocol, and provide empirical evidence of using the implementation to mediate
+                interactions between an LLM and a human-agent in two areas of scientific interest
+                (radiology and drug design). We conduct controlled experiments with a human
+                proxy (a database), and uncontrolled experiments with human subjects. The results
+                provide evidence in support of the protocol's capability of capturing one- and
+                two-way intelligibility in human-LLM interaction; and for the utility of two-way
+                intelligibility in the design of human-machine systems. Our code is available at
+                <a href="https://github.com/karannb/interact">https://github.com/karannb/interact</a>.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Debasish Mohanty, <b>V. Shreyas</b>, Akshaya Palai, Bharath Ramsundar. (2024). <a href="https://arxiv.org/pdf/2412.08658"><u>Open-source Polymer Generative Pipeline</u></a>
+                </div>
+                <div id="btn"><button onclick="abstract(this,2)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Polymers play a crucial role in the development of engi-
+                neering materials, with applications ranging from mechan-
+                ical to biomedical fields. However, the limited polymer-
+                ization processes constrain the variety of organic building
+                blocks that can be experimentally tested. We propose an
+                open-source computational generative pipeline that integrates
+                neural-network-based discriminators, generators, and query-
+                based filtration mechanisms to overcome this limitation and
+                generate hypothetical polymers. The pipeline targets proper-
+                ties, such as ionization potential (IP), by aligning various rep-
+                resentational formats to generate hypothetical polymer can-
+                didates. The discriminators demonstrate improvements over
+                state-of-the-art models due to optimized architecture, while
+                the generators produce novel polymers tailored to the desired
+                property range. We conducted extensive evaluations to assess
+                the generative performance of the pipeline components, fo-
+                cusing on the polymers' ionization potential (IP). The devel-
+                oped pipeline is integrated into the DeepChem framework,
+                enhancing its accessibility and compatibility for various poly-
+                mer generation studies.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    <b>V. Shreyas</b>, Jose Siguenza, <b>Karan Bania</b>, Bharath Ramsundar. (2024). <a href="https://arxiv.org/pdf/2408.06261?"><u>Open-Source Molecular Processing Pipeline for Generating Molecules</u></a>
+                </div>
+                <div id="btn"><button onclick="abstract(this,4)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Generative models for molecules have shown considerable promise for use in
+                computational chemistry, but remain difficult to use for non-experts. For this
+                reason, we introduce open-source infrastructure for easily building generative
+                molecular models into the widely used DeepChem [25] library with the aim of
+                creating a robust and reusable molecular generation pipeline. In particular, we add
+                high quality PyTorch [20] implementations of the Molecular Generative Adversarial
+                Networks (MolGAN) [2] and Normalizing Flows [19]. Our implementations show
+                strong performance comparable with past work [13, 2].
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    <b>Harshvardhan Mestha</b>, <b>Tejas Agrawal</b>, <b>Karan Bania</b>, <b>V. Shreyas</b>, <b>Yash Bhisikar</b>. (2024). <a href="https://arxiv.org/pdf/2406.03586"><u>CountCLIP — [Re] Teaching CLIP to Count to Ten</u></a>
+                </div>
+                <div id="btn"><button onclick="abstract(this,7)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Large vision-language models (VLMs) are shown to learn rich joint image-text rep-
+                resentations enabling high performances in relevant downstream tasks. However,
+                they fail to showcase their quantitative understanding of objects, and they lack
+                good counting-aware representation. This paper conducts a reproducibility study
+                of 'Teaching CLIP to Count to Ten' [1], which presents a method to finetune a CLIP
+                model [2] to improve zero-shot counting accuracy in an image while maintaining the
+                performance for zero-shot classification by introducing a counting-contrastive loss
+                term. We contribute to the existing methods by improving the model's performance
+                on a smaller subset of their training data with lower computational resources. We
+                verify these claims by reproducing their study with our own open-source code. The
+                implementation can be found at <a href="https://github.com/SforAiDl/CountCLIP">https://github.com/SforAiDl/CountCLIP</a>.
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    Mark Schöne*, <b>Yash Bhisikar*</b>, <b>Karan Bania*</b>, Khaleelulla Khan Nazeer, Christian Mayr, Anand Subramoney, David Kappel. (2024). <a href="https://arxiv.org/pdf/2411.12603"><u>STREAM: A Universal State-Space Model for Sparse Geometric Data</u></a>
+                </div>
+                <div id="btn"><button onclick="abstract(this,8)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Handling sparse and unstructured geometric data, such as point clouds or event-based vision, is a pressing challenge in the field of machine vision. Recently, sequence models such as Transformers and state-space models entered the domain of geometric data. These methods require specialized preprocessing to create a sequential view of a set of points. Furthermore, prior works involving sequence models iterate geometric data with either uniform or learned step sizes, implicitly relying on the model to infer the underlying geometric structure. In this work, we propose to encode geometric structure explicitly into the parameterization of a state-space model. State-space models are based on linear dynamics governed by a one-dimensional variable such as time or a spatial coordinate. We exploit this dynamic variable to inject relative differences of coordinates into the step size of the state-space model. The resulting geometric operation computes interactions between all pairs of N points in O(N) steps. Our model deploys the Mamba selective state-space model with a modified CUDA kernel to efficiently map sparse geometric data to modern hardware. The resulting sequence model, which we call STREAM, achieves competitive results on a range of benchmarks from point-cloud classification to event-based vision and audio classification. STREAM demonstrates a powerful inductive bias for sparse geometric data by improving the PointMamba baseline when trained from scratch on the ModelNet40 and ScanObjectNN point cloud analysis datasets. It further achieves, for the first time, 100 % test accuracy on all 11 classes of the DVS128 Gestures dataset.
+            </div>
+        </div>
+        <!-- 
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    S. Jain. (2025). <a href="https://www.computer.org/csdl/proceedings-article/percom-workshops/2025/355300a689/27FQVKJIKqc"><u>SandDune: Single ANtenna Device for Detecting User's Natural Eating Habits</u></a>
+                </div>
+                <div id="btn"><button onclick="abstract(this,10)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Placeholder
+            </div>
+        </div> -->
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                <b>Bhisikar, Yash</b>; Govindaraj, Nirmal; Devaki, Venkatavihan; Anilkumar, Ritu. (2024). <a href="https://ui.adsabs.harvard.edu/abs/2024EGUGA..2619531B/abstract"><u>Gradient-Based Optimisers Versus Genetic Algorithms in Deep Learning Architectures: A Case Study on Rainfall Estimation Over Complex Terrain </u></a>
+                </div>
+                <div id="btn"><button onclick="abstract(this,11)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Gradient-Based Optimisers Versus Genetic Algorithms in Deep Learning Architectures:A Case Study on Rainfall Estimation Over Complex Terrain Yash Bhisikar1*, Nirmal Govindaraj1*, Venkatavihan Devaki2*, Ritu Anilkumar31Birla Institute of Technology And Science, Pilani, K K Birla Goa Campus 2Birla Institute of Technology And Science, Pilani, Pilani Campus 3North Eastern Space Applications Centre, Department of Space, UmiamE-mail: f20210483@goa.bits-pilani.ac.in* Authors have contributed equally to this study.Rainfall is a crucial factor that affects planning processes at various scales, ranging from agricultural activities at the village or residence level to governmental initiatives in the domains of water resource management, disaster preparedness, and infrastructural planning. Thus, a reliable estimate of rainfall and a systematic assessment of variations in rainfall patterns is the need of the hour. Recently, several studies have attempted to predict rainfall over various locations using deep learning architectures, including but not limited to artificial neural networks, convolutional neural networks, recurrent neural networks, or a combination of these. However, a major challenge in the estimation of rainfall is the chaotic nature of rainfall, especially the interplay of spatio-temporal components over orographically complex terrain. For complex computer vision challenges, studies have suggested that population search-driven optimisation techniques such as genetic algorithms may be used in the optimisation as an alternative to traditional gradient-based techniques such as Adam, Adadelta and SGD. Through this study, we aim to extend this hypothesis to the case of rainfall estimation. We integrate the use of population search-based techniques, namely genetic algorithms, to optimise a convolutional neural network architecture built using PyTorch. We have chosen the study area of North-East India for this study as it receives significant monsoon rainfall and is impacted by the undulating terrain that adds complexity to the rainfall estimation. We have used 30 years of rainfall data from the ERA5 Land daily reanalysis dataset with a spatial resolution of 11,132 m for the months of June, July, August and September. Additionally, datasets of the following meteorological variables that can impact rainfall were utilised as input features: dew point temperature, skin temperature, net incoming short-wave radiation received at the surface, wind components and surface pressure. All the datasets are aggregated to daily time steps. Several configurations of the U-Net architecture, such as the number of hidden layers, initialisation techniques and optimisation algorithms, have been used to identify the best configuration in the estimation of rainfall for North-East India. Genetic algorithms were used in initialisation and optimisation to assess the ability of population search heuristics using the PyGAD library. The developed rainfall prediction models were validated at different time steps (0-day, 1-day, 2-day and 3-day latency) on a 7:1:2 train, validation, test dataset split for evaluation metrics such as root mean square error (RMSE) and coefficient of determination (R-squared). The evaluation was performed on a pixel-by-pixel basis as well as an image-by-image basis in order to take magnitude and spatial correlations into consideration. Our study emphasises the importance of considering alternate optimising functions and hyperparameter tuning approaches for complex earth observation challenges such as rainfall prediction. 
+            </div>
+        </div>
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                    <b>Ashmit Khandelwal</b>, <b>Aditya Agrawal</b>, Aanisha Bhattacharyya, Yaman K Singla, <b>Somesh Singh</b>, Uttaran Bhattacharya, Ishita Dasgupta, Stefano Petrangeli, Rajiv Ratn Shah, Changyou Chen, Balaji Krishnamurthy. (2024). <a href="https://arxiv.org/abs/2309.00359"><u>Large Content And Behavior Models To Understand, Simulate, And Optimize Content And Behavior</u></a>- [12th International Conference on Learning Representations - Spotlight]
+                </div>
+                <div id="btn"><button onclick="abstract(this,16)">▼</button></div>
             </div>
             <div id="abs">
                 <center><b>Abstract</b></center>
@@ -408,7 +697,7 @@
             </div>
         </div>
 
-        <h3>preprints</h3>
+        <h2>preprints</h2>
         
         <div id="paper">
             <div id="topbar">
@@ -504,11 +793,54 @@
     </div>
     <div id="footer">
         <div>
-            <a href=""><img src="../assets/github_dark.png" alt="github" width="50" height="50"></a>
-            <a href=""><img src="../assets/twitter_dark.png" alt="twitter" width="55" height="50"></a>
-            <a href=""><img src="../assets/youtube_dark.png" alt="youtube" width="50" height="50"></a>
-            <a href=""><img src="../assets/linkedin_dark.png" alt="linkedin" width="50" height="50"></a>
+            <a href="https://github.com/SforAiDl" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/github_dark.png" alt="GitHub">
+            </a>
+            <a href="https://x.com/SforAiDL" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/twitter_dark.png" alt="Twitter">
+            </a>
+            <a href="https://www.youtube.com/channel/UCU5Pl1RJvrfwegSciyNdH5Q" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/youtube_dark.png" alt="YouTube">
+            </a>
+            <a href="https://www.linkedin.com/company/sforaidl/" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/linkedin_dark.png" alt="LinkedIn">
+            </a>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const pages = document.getElementById('pages');
+            const overlay = document.getElementById('sidebar-overlay');
+            
+            if (hamburger && pages && overlay) {
+                hamburger.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    hamburger.classList.toggle('active');
+                    pages.classList.toggle('active');
+                    overlay.classList.toggle('active');
+                    document.body.classList.toggle('sidebar-open');
+                });
+                
+                overlay.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    pages.classList.remove('active');
+                    overlay.classList.remove('active');
+                    document.body.classList.remove('sidebar-open');
+                });
+                
+                const pageLinks = pages.querySelectorAll('a');
+                pageLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        hamburger.classList.remove('active');
+                        pages.classList.remove('active');
+                        overlay.classList.remove('active');
+                        document.body.classList.remove('sidebar-open');
+                    });
+                });
+            }
+        });
+    </script>
 </body>
 </html>
