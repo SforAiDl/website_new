@@ -54,6 +54,37 @@
             }
         </script>
         <h2>publications</h2>
+            <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                <b>Anish Sathyanarayanan*</b>, <b>Aditya Nagarsekar*</b>, <b>Aarush Rathore*</b> (2026). <a href="https://arxiv.org/abs/2602.03994"><u>Bypassing the Rationale: Causal Auditing of Implicit Reasoning in Language Models</u></a> (Latent & Implicit Thinking @ ICLR 2026)
+                </div>
+                <div id="btn"><button onclick="abstract(this,0)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Chain-of-thought (CoT) prompting is widely used as a reasoning aid and is often treated as a transparency mechanism. Yet behavioral gains under CoT do not imply that the model's internal computation causally depends on the emitted reasoning text, i.e., models may produce fluent rationales while routing decision-critical computation through latent pathways. We introduce a causal, layerwise audit of CoT faithfulness based on activation patching. Our key metric, the CoT Mediation Index (CMI), isolates CoT-specific causal influence by comparing performance degradation from patching CoT-token hidden states against matched control patches. Across multiple model families (Phi, Qwen, DialoGPT) and scales, we find that CoT-specific influence is typically depth-localized into narrow "reasoning windows," and we identify bypass regimes where CMI is near-zero despite plausible CoT text. We further observe that models tuned explicitly for reasoning tend to exhibit stronger and more structured mediation than larger untuned counterparts, while Mixture-of-Experts models show more distributed mediation consistent with routing-based computation. Overall, our results show that CoT faithfulness varies substantially across models and tasks and cannot be inferred from behavior alone, motivating causal, layerwise audits when using CoT as a transparency signal. 
+            </div>
+        </div>
+
+
+
+        <div id="paper">
+            <div id="topbar">
+                <div id="title">
+                <b>Karan Bania*</b>, <b>Soham Kalburgi*</b>, Manit Tanwar*, Dhruthi*, <b>Aditya Nagarsekar*</b>, <b>Harshvardhan Mestha*</b>, Naman Chibber*, Raj Deshmukh*, <b>Anish Sathyanarayanan*</b>, <b>Aarush Rathore*</b>, <b>Pratham Chheda*</b> (2026). <a href="https://arxiv.org/abs/2602.08810"><u>lrnnx: A library for Linear RNNs</u></a> (SRW @ EACL 2026)
+                </div>
+                <div id="btn"><button onclick="abstract(this,0)">▼</button></div>
+            </div>
+            <div id="abs">
+                <center><b>Abstract</b></center>
+                <br>
+                Linear recurrent neural networks (LRNNs) provide a structured approach to sequence modeling that bridges classical linear dynamical systems and modern deep learning, offering both expressive power and theoretical guarantees on stability and trainability. In recent years, multiple LRNN-based architectures have been proposed, each introducing distinct parameterizations, discretization schemes, and implementation constraints. However, existing implementations are fragmented across different software frameworks, often rely on framework-specific optimizations, and in some cases require custom CUDA kernels or lack publicly available code altogether. As a result, using, comparing, or extending LRNNs requires substantial implementation effort. To address this, we introduce lrnnx, a unified software library that implements several modern LRNN architectures under a common interface. The library exposes multiple levels of control, allowing users to work directly with core components or higher-level model abstractions. lrnnx aims to improve accessibility, reproducibility, and extensibility of LRNN research and applications. We make our code available under a permissive MIT license.
+            </div>
+        </div>
+
+
         <div id="paper">
             <div id="topbar">
                 <div id="title">
