@@ -175,6 +175,19 @@ body.sidebar-open {
     font-weight: 500;
 }
 
+#alert-content a:link,
+#alert-content a:visited {
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 600;
+}
+
+#alert-content a:hover {
+    opacity: 1;
+    color: #ffe5ff;
+}
+
 /* Sidebar Overlay */
 #sidebar-overlay {
     display: none;
