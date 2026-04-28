@@ -138,11 +138,8 @@ export default function HomePage() {
         <div className={styles.heroGrid}>
           <div className={styles.heroTop}>
             <FadeIn>
-              <div className={styles.heroBrand}>
-                <img src="/assets/logo_dark.png" alt="SAiDL" className={styles.heroLogo} />
-                <div className={styles.heroBrandDivider} />
-              </div>
               <h1 className={styles.heroTitle}>
+                <img src="/assets/logo_dark.png" alt="SAiDL" className={styles.inlineLogo} />
                 Society for<br />Artificial Intelligence<br />and Deep Learning.
               </h1>
             </FadeIn>
@@ -210,7 +207,7 @@ export default function HomePage() {
             <FadeIn>
               <div className={styles.sectionLabel}>
                 <span className={styles.labelDot} />
-                NEWS INDEX
+                NEWS
               </div>
             </FadeIn>
           </div>
