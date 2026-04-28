@@ -110,12 +110,17 @@
   }
 
   .card {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
   }
 
   .cardImage {
-    width: 100%;
-    height: 120px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .cardImageLogo img {
+    width: 45px;
+    height: 45px;
   }
 }
