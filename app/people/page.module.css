@@ -1,0 +1,108 @@
+.main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 4rem 5rem;
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.alumniLabel {
+  margin-top: 4rem;
+}
+
+.labelDot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.cardLink:hover {
+  opacity: 1;
+}
+
+.card {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.card:hover {
+  background-color: var(--bg-subtle);
+}
+
+.cardPhoto {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 1rem;
+  overflow: hidden;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border);
+}
+
+.cardPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.02em;
+}
+
+.cardRole {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.01em;
+}
+
+.cardAffiliation {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .cardPhoto {
+    width: 100px;
+    height: 100px;
+  }
+}

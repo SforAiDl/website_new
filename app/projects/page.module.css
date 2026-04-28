@@ -1,0 +1,121 @@
+.main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 4rem 5rem;
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 2.5rem;
+}
+
+.labelDot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent);
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: flex-start;
+}
+
+.card:last-child {
+  border-bottom: none;
+}
+
+.cardImage {
+  flex-shrink: 0;
+  width: 140px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border);
+}
+
+.cardImage img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.cardImageLogo {
+  background-color: transparent;
+  border: none;
+}
+
+.cardImageLogo img {
+  width: 60px;
+  height: 60px;
+  opacity: 0.7;
+}
+
+.cardBody {
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.cardDesc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+.cardLinks {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.cardLinks a {
+  font-size: 0.9rem;
+  color: var(--accent);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .card {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cardImage {
+    width: 100%;
+    height: 120px;
+  }
+}
