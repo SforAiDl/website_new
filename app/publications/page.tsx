@@ -112,6 +112,9 @@ export default function PublicationsPage() {
           <span className={styles.labelDot} />
           PUBLICATIONS
         </div>
+        <p className={styles.disclaimer}>
+          * Only publications authored by members during their time at SAiDL are listed here.
+        </p>
       </FadeIn>
 
       <div className={styles.list}>

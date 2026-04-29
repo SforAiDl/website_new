@@ -263,6 +263,15 @@
   transform: scale(1.05);
 }
 
+.marqueeDisclaimer {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem 0 2rem;
+  font-style: italic;
+  background-color: var(--bg);
+}
+
 /* ── News Section ── */
 .newsSection {
   background-color: var(--bg);

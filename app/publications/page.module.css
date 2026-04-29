@@ -13,7 +13,14 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.disclaimer {
+  font-size: 0.85rem;
+  color: var(--text-light);
   margin-bottom: 2rem;
+  font-style: italic;
 }
 
 .preprintLabel {
