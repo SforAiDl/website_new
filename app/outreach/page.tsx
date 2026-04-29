@@ -110,11 +110,13 @@ function AccordionItem({ item }: { item: OutreachItem }) {
         <span className={styles.itemTitle}>{item.title}</span>
         <span className={styles.icon}>{open ? "▲" : "▼"}</span>
       </button>
-      {open && (
-        <div className={styles.itemDetails}>
-          <div dangerouslySetInnerHTML={{ __html: item.details }} />
+      <div className={`${styles.detailsWrapper} ${open ? styles.open : ""}`}>
+        <div className={styles.detailsInner}>
+          <div className={styles.itemDetails}>
+            <div dangerouslySetInnerHTML={{ __html: item.details }} />
+          </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }

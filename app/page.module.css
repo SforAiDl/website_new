@@ -87,11 +87,12 @@
 
 .inlineLogo {
   display: inline-block;
-  height: 0.9em;
-  width: 0.9em;
-  vertical-align: middle;
-  margin-right: 0.25em;
-  margin-bottom: 0.1em;
+  height: 0.85em;
+  width: 0.85em;
+  vertical-align: baseline;
+  margin-left: -0.01em;
+  margin-right: 0.00em;
+  transform: translateY(0.17em);
   opacity: 0.85;
   filter: grayscale(100%);
   mix-blend-mode: exclusion;

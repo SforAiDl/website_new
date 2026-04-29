@@ -139,8 +139,7 @@ export default function HomePage() {
           <div className={styles.heroTop}>
             <FadeIn>
               <h1 className={styles.heroTitle}>
-                <img src="/assets/logo_dark.png" alt="SAiDL" className={styles.inlineLogo} />
-                Society for<br />Artificial Intelligence<br />and Deep Learning.
+                S<img src="/assets/logo_dark.png" alt="o" className={styles.inlineLogo} />ciety for<br />Artificial Intelligence<br />and Deep Learning
               </h1>
             </FadeIn>
           </div>

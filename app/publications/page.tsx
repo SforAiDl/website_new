@@ -92,12 +92,14 @@ function PaperCard({ pub }: { pub: Publication }) {
           </span>
         )}
       </div>
-      {open && pub.abstract && (
-        <div className={styles.abstract}>
-          <div className={styles.abstractTitle}>Abstract</div>
-          <p>{pub.abstract}</p>
+      <div className={`${styles.abstractWrapper} ${open && pub.abstract ? styles.open : ""}`}>
+        <div className={styles.abstractInner}>
+          <div className={styles.abstract}>
+            <div className={styles.abstractTitle}>Abstract</div>
+            <p>{pub.abstract}</p>
+          </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }

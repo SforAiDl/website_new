@@ -85,13 +85,34 @@
   margin-left: 1rem;
 }
 
+.detailsWrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.detailsWrapper.open {
+  grid-template-rows: 1fr;
+}
+
+.detailsInner {
+  overflow: hidden;
+}
+
 .itemDetails {
   padding: 0 0 1.25rem;
   font-size: 0.95rem;
   line-height: 1.8;
   color: var(--text);
-  animation: fadeInUp 0.3s ease forwards;
   letter-spacing: -0.01em;
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+}
+
+.detailsWrapper.open .itemDetails {
+  opacity: 1;
+  transition-delay: 0.1s;
 }
 
 .itemDetails a {
