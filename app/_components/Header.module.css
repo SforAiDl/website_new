@@ -38,6 +38,7 @@
 .logo img {
   width: 36px;
   height: 36px;
+  transform: translateY(2px);
 }
 
 .logo span {
