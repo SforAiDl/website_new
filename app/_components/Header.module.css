@@ -26,7 +26,7 @@
   color: var(--primary);
   text-decoration: none;
   font-family: var(--font-quicksand), sans-serif;
-  font-weight: 600;
+  font-weight: 350;
   font-size: 1.65rem;
   letter-spacing: -0.5px;
 }
@@ -42,7 +42,6 @@
 }
 
 .logo span {
-  font-weight: 400;
   letter-spacing: -0.01em;
 }
 
@@ -166,12 +165,12 @@
     right: 0;
   }
 
-  .nav > div {
+  .nav>div {
     padding: 1rem 0;
     border-bottom: 1px solid var(--border);
   }
 
-  .nav > div:last-child {
+  .nav>div:last-child {
     border-bottom: none;
   }
 
