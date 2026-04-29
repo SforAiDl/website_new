@@ -14,6 +14,7 @@ const PARTNERS = [
   { src: "/assets/amazon_logo_color.png", alt: "Amazon", height: "35px" },
   { src: "/assets/inria_logo_color.png", alt: "INRIA" },
   { src: "/assets/cmu_logo_color.png", alt: "CMU" },
+  { src: "/assets/yale_logo_color.png", alt: "Yale" },
 ];
 
 const NEWS_ITEMS = [
