@@ -44,7 +44,7 @@
 
 .cardImage {
   flex-shrink: 0;
-  width: 140px;
+  width: 100px;
   height: 100px;
   overflow: hidden;
   display: flex;
