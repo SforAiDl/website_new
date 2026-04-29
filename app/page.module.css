@@ -345,14 +345,8 @@
 
 .newsContent a {
   color: var(--accent);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  padding-bottom: 1px;
-  transition: border-color 0.2s ease;
-}
-
-.newsContent a:hover {
-  border-bottom-color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 /* ── Responsive ── */
