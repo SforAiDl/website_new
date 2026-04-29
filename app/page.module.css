@@ -112,6 +112,42 @@
   pointer-events: auto;
 }
 
+.highlightLetter {
+  transition: color 0.3s ease;
+}
+
+.heroTitle:hover .highlightLetter {
+  color: var(--accent);
+}
+
+.highlightI {
+  position: relative;
+  display: inline-block;
+}
+
+.letterI {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.letterSmallI {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.heroTitle:hover .letterI {
+  opacity: 0;
+}
+
+.heroTitle:hover .letterSmallI {
+  opacity: 1;
+}
+
 .heroBottom {
   padding-bottom: 1rem;
 }

@@ -142,7 +142,9 @@ export default function HomePage() {
           <div className={styles.heroTop}>
             <FadeIn>
               <h1 className={styles.heroTitle}>
-                S<img src="/assets/logo_dark.png" alt="o" className={styles.inlineLogo} />ciety for<br />Artificial Intelligence<br />and Deep Learning
+                <span className={styles.highlightLetter}>S</span><img src="/assets/logo_dark.png" alt="o" className={styles.inlineLogo} />ciety for<br />
+                <span className={styles.highlightLetter}>A</span>rtificial <span className={`${styles.highlightLetter} ${styles.highlightI}`}><span className={styles.letterI}>I</span><span className={styles.letterSmallI}>i</span></span>ntelligence<br />
+                and <span className={styles.highlightLetter}>D</span>eep <span className={styles.highlightLetter}>L</span>earning
               </h1>
             </FadeIn>
           </div>
