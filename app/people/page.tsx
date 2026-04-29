@@ -99,7 +99,7 @@ export default function PeoplePage() {
       <FadeIn>
         <div className={styles.sectionLabel}>
           <span className={styles.labelDot} />
-          MEMBERS
+          CURRENT MEMBERS
         </div>
       </FadeIn>
 
@@ -112,6 +112,7 @@ export default function PeoplePage() {
       </div>
 
       <FadeIn>
+        <hr className={styles.divider} />
         <div className={`${styles.sectionLabel} ${styles.alumniLabel}`}>
           <span className={styles.labelDot} />
           ALUMNI

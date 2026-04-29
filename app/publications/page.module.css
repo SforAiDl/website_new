@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -65,12 +65,9 @@
 }
 
 .paperClickable:hover {
-  background-color: rgba(128, 0, 128, 0.02);
 }
 
 .paperOpen {
-  border-left: 2px solid var(--accent);
-  padding-left: calc(1.25rem - 2px);
 }
 
 .paperCitation {

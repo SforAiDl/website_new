@@ -151,7 +151,6 @@ export default function HomePage() {
           <div className={styles.heroBottom}>
             <FadeIn delay={150}>
               <div className={styles.heroTypedContainer}>
-                <div className={styles.typedLabel}>[ INITIATIVE ]</div>
                 <div className={styles.heroTyped} suppressHydrationWarning>
                   <TypedText phrases={TYPED_PHRASES} />
                 </div>
@@ -173,15 +172,14 @@ export default function HomePage() {
               <p className={styles.missionText}>
                 We are a student-run, non-profit, professional group of motivated individuals
                 based out of BITS Pilani, working on research and application of Artificial
-                Intelligence and Deep Learning. Through involvement in projects with the agencies
-                below, we aim to:
+                Intelligence and Deep Learning. Our goal is to:
               </p>
             </FadeIn>
           </div>
           <div className={styles.goalsGrid}>
             {GOALS.map((g, i) => (
               <FadeIn key={g.num} delay={100 + i * 100}>
-                <div className={styles.goalCard}>
+                <div className={`${styles.goalCard} ${i === GOALS.length - 1 ? styles.goalCardLast : ""}`}>
                   <span className={styles.goalNumber}>[ {g.num} ]</span>
                   <p className={styles.goalText}>{g.text}</p>
                 </div>
@@ -193,22 +191,25 @@ export default function HomePage() {
 
       {/* Marquee */}
       <FadeIn>
-        <section className={styles.marquee} id="partners-marquee">
-          <div className={styles.track}>
-            <div className={styles.trackContent}>
-              {[...PARTNERS, ...PARTNERS].map((p, i) => (
-                <img 
-                  key={i} 
-                  src={p.src} 
-                  alt={p.alt} 
-                  style={p.height ? { height: p.height } : undefined}
-                />
-              ))}
-            </div>
+        <div className={styles.marqueeContainer}>
+          <div className={styles.sectionLabel} style={{ marginBottom: "1.5rem" }}>
+            <span className={styles.labelDot} />
+            Our members have collaborated with:
           </div>
-        </section>
-        <div className={styles.marqueeDisclaimer}>
-          * Note: This is a non-exhaustive list of organizations our members have collaborated with or are currently collaborating with during their time at SAiDL.
+          <section className={styles.marquee} id="partners-marquee">
+            <div className={styles.track}>
+              <div className={styles.trackContent}>
+                {[...PARTNERS, ...PARTNERS].map((p, i) => (
+                  <img 
+                    key={i} 
+                    src={p.src} 
+                    alt={p.alt} 
+                    style={p.height ? { height: p.height } : undefined}
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
         </div>
       </FadeIn>
 
