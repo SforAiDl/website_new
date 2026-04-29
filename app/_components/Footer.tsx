@@ -17,7 +17,7 @@ export default function Footer() {
           </a>
         ))}
       </div>
-      <div className={styles.copy}>&copy; 2026 SAiDL</div>
+      <div className={styles.copy}>&copy; 2026 Society for Artificial Intelligence and Deep Learning</div>
     </footer>
   );
 }
