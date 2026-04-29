@@ -4,7 +4,7 @@ import FadeIn from "../_components/FadeIn";
 const PROJECTS = [
   {
     title: "lrnnx: A library for Linear RNNs",
-    description: "A unified PyTorch library providing easy access to state-of-the-art Linear RNN architectures for sequence modeling. The technical report of this system was accepted to EACL Student Research Workshop 2026.",
+    description: 'A unified PyTorch library providing easy access to state-of-the-art Linear RNN architectures for sequence modeling. The technical report of this system was accepted to <a href="https://2026.eacl.org/calls/srw/" target="_blank" rel="noopener noreferrer">EACL Student Research Workshop 2026</a>.',
     image: "/assets/logo_dark.png",
     links: [
       { label: "preprint", href: "https://arxiv.org/abs/2602.08810" },
@@ -15,7 +15,7 @@ const PROJECTS = [
   },
   {
     title: "CountCLIP - [Re] Teaching CLIP to Count to Ten",
-    description: "Reproducibility study of the paper Teaching CLIP to Count to Ten, published by Google Research, in ICCV 2023. Implementation of the paper from scratch and collected a specialized dataset to facilitate the training. Further explorations and analysis of the paper were done, and we wrote a paper on our findings which is currently under review at ReScience C 2024.",
+    description: 'Reproducibility study of the paper <a href="https://arxiv.org/abs/2302.12066" target="_blank" rel="noopener noreferrer">Teaching CLIP to Count to Ten</a>, published by Google Research, in ICCV 2023. Implementation of the paper from scratch and collected a specialized dataset to facilitate the training. Further explorations and analysis of the paper were done, and we wrote a paper on our findings which is currently under review at ReScience C 2024.',
     image: "/assets/sample.gif",
     links: [
       { label: "preprint", href: "https://arxiv.org/abs/2406.03586" },
@@ -123,7 +123,10 @@ export default function ProjectsPage() {
               </div>
               <div className={styles.cardBody}>
                 <h3 className={styles.cardTitle}>{project.title}</h3>
-                <p className={styles.cardDesc}>{project.description}</p>
+                <div 
+                  className={styles.cardDesc} 
+                  dangerouslySetInnerHTML={{ __html: project.description }} 
+                />
                 {project.links.length > 0 && (
                   <div className={styles.cardLinks}>
                     {project.links.map((link) => (
