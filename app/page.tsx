@@ -205,7 +205,7 @@ export default function HomePage() {
           </div>
         </section>
         <div className={styles.marqueeDisclaimer}>
-          * Note: Only organizations our members collaborated with during their time at SAiDL are listed here.
+          * Note: This is a non-exhaustive list of organizations our members collaborated with during their time at SAiDL.
         </div>
       </FadeIn>
 

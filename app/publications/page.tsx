@@ -113,7 +113,7 @@ export default function PublicationsPage() {
           PUBLICATIONS
         </div>
         <p className={styles.disclaimer}>
-          * Only publications authored by members during their time at SAiDL are listed here.
+          * Note: This is a non-exhaustive list of publications authored by members during their time at SAiDL.
         </p>
       </FadeIn>
 
