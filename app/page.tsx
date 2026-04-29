@@ -143,7 +143,7 @@ export default function HomePage() {
             <FadeIn>
               <h1 className={styles.heroTitle}>
                 <span className={styles.highlightLetter}>S</span><img src="/assets/logo_dark.png" alt="o" className={styles.inlineLogo} />ciety for<br />
-                <span className={styles.highlightLetter}>A</span>rtificial <span className={`${styles.highlightLetter} ${styles.highlightI}`}><span className={styles.letterI}>I</span><span className={styles.letterSmallI}>i</span></span>ntelligence<br />
+                <span className={styles.highlightLetter}>A</span>rtificial <span style={{ whiteSpace: "nowrap" }}><span className={`${styles.highlightLetter} ${styles.highlightI}`}><span className={styles.letterI}>I</span><span className={styles.letterSmallI}>i</span></span>ntelligence</span><br />
                 and <span className={styles.highlightLetter}>D</span>eep <span className={styles.highlightLetter}>L</span>earning
               </h1>
             </FadeIn>
