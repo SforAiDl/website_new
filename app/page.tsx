@@ -4,14 +4,16 @@ import FadeIn from "./_components/FadeIn";
 import HeroReveal from "./_components/HeroReveal";
 
 const PARTNERS = [
-  { src: "/assets/harvard.png", alt: "Harvard" },
-  { src: "/assets/brown.png", alt: "Brown" },
-  { src: "/assets/mila.png", alt: "MILA" },
-  { src: "/assets/google.png", alt: "Google" },
-  { src: "/assets/microsoft.png", alt: "Microsoft" },
-  { src: "/assets/mit.png", alt: "MIT" },
-  { src: "/assets/adobe.png", alt: "Adobe" },
-  { src: "/assets/amazon.png", alt: "Amazon" },
+  { src: "/assets/harvard_color_logo.png", alt: "Harvard" },
+  { src: "/assets/brown_logo_color.png", alt: "Brown" },
+  { src: "/assets/mila_logo_color.png", alt: "MILA" },
+  { src: "/assets/google_logo_color.png", alt: "Google" },
+  { src: "/assets/microsoft_logo_color.png", alt: "Microsoft" },
+  { src: "/assets/mit_logo_color.png", alt: "MIT" },
+  { src: "/assets/adobe_logo_color.png", alt: "Adobe" },
+  { src: "/assets/amazon_logo_color.png", alt: "Amazon" },
+  { src: "/assets/inria_logo_color.png", alt: "INRIA" },
+  { src: "/assets/cmu_logo_color.png", alt: "CMU" },
 ];
 
 const NEWS_ITEMS = [
