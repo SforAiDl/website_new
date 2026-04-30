@@ -66,7 +66,8 @@
   transition: color 0.2s ease;
 }
 
-.itemHeader:hover .itemTitle {
+.itemHeader:hover .itemTitle,
+.itemHeader:hover .icon {
   color: var(--accent);
 }
 
@@ -83,6 +84,7 @@
   color: var(--text-light);
   flex-shrink: 0;
   margin-left: 1rem;
+  transition: color 0.2s ease;
 }
 
 .detailsWrapper {
@@ -121,7 +123,8 @@
   text-underline-offset: 2px;
 }
 
-.itemOpen .itemTitle {
+.itemOpen .itemTitle,
+.itemOpen .icon {
   color: var(--accent);
 }
 

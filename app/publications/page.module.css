@@ -67,7 +67,8 @@
 .paperClickable:hover {
 }
 
-.paperOpen {
+.paperOpen .toggleIcon {
+  color: var(--accent);
 }
 
 .paperCitation {
