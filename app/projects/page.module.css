@@ -46,6 +46,7 @@
   flex-shrink: 0;
   width: 100px;
   height: 100px;
+  margin-top: 0.25rem;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -61,7 +62,7 @@
 }
 
 .cardImageLogo {
-  background-color: var(--bg-subtle);
+  background-color: #ffffff;
   border: 1px solid var(--border);
 }
 

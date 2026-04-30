@@ -4,15 +4,15 @@ import FadeIn from "./_components/FadeIn";
 import HeroReveal from "./_components/HeroReveal";
 
 const PARTNERS = [
-  { src: "/assets/harvard_color_logo.png", alt: "Harvard" },
-  { src: "/assets/brown_logo_color.png", alt: "Brown" },
+  { src: "/assets/harvard_color_logo.png", alt: "Harvard", style: { transform: "translateY(1px)" } },
+  { src: "/assets/brown_logo_color.png", alt: "Brown", style: { transform: "translateY(-3px)" }},
   { src: "/assets/mila_logo_color.png", alt: "MILA", height: "85px" },
-  { src: "/assets/google_logo_color.png", alt: "Google" },
+  { src: "/assets/google_logo_color.png", alt: "Google", style: { transform: "translateY(6px)" } },
   { src: "/assets/microsoft_logo_color.png", alt: "Microsoft" },
   { src: "/assets/mit_logo_color.png", alt: "MIT" },
   { src: "/assets/adobe_logo_color.png", alt: "Adobe" },
-  { src: "/assets/amazon_logo_color.png", alt: "Amazon", height: "35px" },
-  { src: "/assets/inria_logo_color.png", alt: "INRIA" },
+  { src: "/assets/amazon_logo_color.png", alt: "Amazon", height: "35px", style: { transform: "translateY(7px)" } },
+  { src: "/assets/inria_logo_color.png", alt: "INRIA", style: { transform: "translateY(-2px)" } },
   { src: "/assets/cmu_logo_color.png", alt: "CMU" },
   { src: "/assets/yale_logo_color.png", alt: "Yale" },
 ];
@@ -200,11 +200,14 @@ export default function HomePage() {
             <div className={styles.track}>
               <div className={styles.trackContent}>
                 {[...PARTNERS, ...PARTNERS].map((p, i) => (
-                  <img 
-                    key={i} 
-                    src={p.src} 
-                    alt={p.alt} 
-                    style={p.height ? { height: p.height } : undefined}
+                  <img
+                    key={i}
+                    src={p.src}
+                    alt={p.alt}
+                    style={{
+                      ...(p.height ? { height: p.height } : {}),
+                      ...(p.style || {})
+                    }}
                   />
                 ))}
               </div>
