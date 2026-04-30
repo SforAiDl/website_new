@@ -169,7 +169,7 @@
   font-size: clamp(1.05rem, 2vw, 1.4rem);
   color: var(--secondary);
   font-weight: 400;
-  min-height: 2.5rem;
+  min-height: 5.5rem;
   letter-spacing: -0.01em;
 }
 
@@ -403,8 +403,14 @@
     gap: 2rem;
   }
 
+  .goalCard {
+    border-left: none;
+    border-top: 2px solid var(--border);
+  }
+
   .goalCardLast {
     border-right: none;
+    border-bottom: 2px solid var(--border);
   }
 
   .newsInner {
@@ -462,7 +468,7 @@
   }
 
   .goalCard {
-    padding: 1.5rem 0 1.5rem 1.5rem;
+    padding: 1.5rem;
   }
 
   .newsItem {

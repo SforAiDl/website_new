@@ -5,7 +5,7 @@ import HeroReveal from "./_components/HeroReveal";
 
 const PARTNERS = [
   { src: "/assets/harvard_color_logo.png", alt: "Harvard", style: { transform: "translateY(1px)" } },
-  { src: "/assets/brown_logo_color.png", alt: "Brown", style: { transform: "translateY(-3px)" }},
+  { src: "/assets/brown_logo_color.png", alt: "Brown", style: { transform: "translateY(-3px)" } },
   { src: "/assets/mila_logo_color.png", alt: "MILA", height: "85px" },
   { src: "/assets/google_logo_color.png", alt: "Google", style: { transform: "translateY(6px)" } },
   { src: "/assets/microsoft_logo_color.png", alt: "Microsoft" },
