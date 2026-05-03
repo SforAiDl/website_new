@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100svh - var(--header-height));
+  padding: 2rem;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+}
+
+.glitchWrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.errorCode {
+  font-family: var(--font-sans);
+  font-size: clamp(4rem, 10vw, 7rem);
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  color: var(--accent);
+  letter-spacing: -0.04em;
+  position: relative;
+}
+
+/* Subtle hover effect for the 404 */
+.errorCode:hover {
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.title {
+  font-family: var(--font-sans);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 400;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.8rem;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background-color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid var(--accent);
+}
+
+.button:hover {
+  background-color: #fafafa;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+}
