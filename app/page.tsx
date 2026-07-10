@@ -153,7 +153,7 @@ export default function HomePage() {
                 ABOUT US
               </div>
               <p className={styles.missionText}>
-                We are a student-run, non-profit, professional group of motivated individuals
+                We are a student-run, non-profit, professional group of motivated undergraduate individuals
                 based out of BITS Pilani, working on research and application of Artificial
                 Intelligence and Deep Learning. Our goal is to:
               </p>
