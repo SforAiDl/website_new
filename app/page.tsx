@@ -108,9 +108,9 @@ const NEWS_ITEMS = [
 ];
 
 const GOALS = [
-  { num: "01", text: "Inculcate the spirit of research in Indian universities" },
-  { num: "02", text: "Form an extensive alumni network of researchers in AI and deep learning" },
-  { num: "03", text: "Collaborate with industry and research labs on cutting-edge research" },
+  { num: "1", text: "Inculcate the spirit of research in Indian universities" },
+  { num: "2", text: "Form an extensive alumni network of researchers in AI and deep learning" },
+  { num: "3", text: "Collaborate with industry and research labs on cutting-edge research" },
 ];
 
 export default function HomePage() {
@@ -163,7 +163,7 @@ export default function HomePage() {
             {GOALS.map((g, i) => (
               <FadeIn key={g.num} delay={100 + i * 100}>
                 <div className={`${styles.goalCard} ${i === GOALS.length - 1 ? styles.goalCardLast : ""}`}>
-                  <span className={styles.goalNumber}>[ {g.num} ]</span>
+                  <span className={styles.goalNumber}>{g.num}</span>
                   <p className={styles.goalText}>{g.text}</p>
                 </div>
               </FadeIn>
