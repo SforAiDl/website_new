@@ -28,7 +28,10 @@ const dmSerif = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  title: "SAiDL - Society for Artificial Intelligence and Deep Learning",
+  title: {
+    template: "%s / SAiDL",
+    default: "SAiDL - Society for Artificial Intelligence and Deep Learning",
+  },
   description:
     "A student-run, non-profit group based out of BITS Pilani, working on research and application of Artificial Intelligence and Deep Learning.",
   icons: {
