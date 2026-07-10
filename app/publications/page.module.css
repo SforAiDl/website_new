@@ -180,4 +180,17 @@
   .main {
     padding: 2rem 1.5rem 3rem;
   }
+
+  .tooltip {
+    top: calc(100% + 10px);
+    left: 0;
+    transform: translateY(-4px);
+    white-space: normal;
+    width: 78vw;
+    max-width: calc(100vw - 3rem);
+  }
+
+  .hasTooltip:hover .tooltip {
+    transform: translateY(0);
+  }
 }
