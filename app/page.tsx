@@ -173,31 +173,33 @@ export default function HomePage() {
       </section>
 
       {/* Marquee */}
-      <FadeIn>
-        <div className={styles.marqueeContainer}>
-          <div className={styles.sectionLabel} style={{ marginBottom: "1.5rem" }}>
-            <span className={styles.labelDot} />
-            Our members have collaborated with:
-          </div>
-          <section className={styles.marquee} id="partners-marquee">
-            <div className={styles.track}>
-              <div className={styles.trackContent}>
-                {[...PARTNERS, ...PARTNERS].map((p, i) => (
-                  <img
-                    key={i}
-                    src={p.src}
-                    alt={p.alt}
-                    style={{
-                      ...(p.height ? { height: p.height } : {}),
-                      ...(p.style || {})
-                    }}
-                  />
-                ))}
-              </div>
+      <section className={styles.marqueeSection} id="partners-section">
+        <FadeIn>
+          <div className={styles.marqueeContainer}>
+            <div className={styles.sectionLabel} style={{ marginBottom: "1.5rem" }}>
+              <span className={styles.labelDot} />
+              Our members have collaborated with:
             </div>
-          </section>
-        </div>
-      </FadeIn>
+            <section className={styles.marquee} id="partners-marquee">
+              <div className={styles.track}>
+                <div className={styles.trackContent}>
+                  {[...PARTNERS, ...PARTNERS].map((p, i) => (
+                    <img
+                      key={i}
+                      src={p.src}
+                      alt={p.alt}
+                      style={{
+                        ...(p.height ? { height: p.height } : {}),
+                        ...(p.style || {})
+                      }}
+                    />
+                  ))}
+                </div>
+              </div>
+            </section>
+          </div>
+        </FadeIn>
+      </section>
 
       {/* News */}
       <section className={styles.newsSection} id="news-section">
