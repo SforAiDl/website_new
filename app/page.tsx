@@ -1,5 +1,4 @@
 import styles from "./page.module.css";
-import TypedText from "./_components/TypedText";
 import FadeIn from "./_components/FadeIn";
 import HeroReveal from "./_components/HeroReveal";
 
@@ -108,13 +107,6 @@ const NEWS_ITEMS = [
   { date: "May 2020", content: 'SAiDL is organizing a Season of Code to work on cutting edge research projects with a strong focus on open source software. Check out our projects <a href="https://github.com/SforAiDl/SAiDL-Season-of-Code">here</a>!' },
 ];
 
-const TYPED_PHRASES = [
-  "Building a community to inspire excellence in ML",
-  "Inculcating the spirit of research in Indian universities",
-  "Collaborating on cutting-edge AI research",
-  "Forming an extensive alumni network of AI researchers",
-];
-
 const GOALS = [
   { num: "01", text: "Inculcate the spirit of research in Indian universities" },
   { num: "02", text: "Form an extensive alumni network of researchers in AI and deep learning" },
@@ -125,7 +117,7 @@ export default function HomePage() {
   return (
     <>
       {/* Alert Banner */}
-      <div className={styles.alert} id="alert-banner">
+      {/* <div className={styles.alert} id="alert-banner">
         <div className={styles.alertContent}>
           The 2026 Summer Induction Assignment is out.{" "}
           <a href="https://github.com/SforAiDl/SAiDL-Summer-2026-Induction-Assignment" target="_blank">
@@ -133,7 +125,7 @@ export default function HomePage() {
           </a>
           .
         </div>
-      </div>
+      </div> */}
 
       {/* Hero */}
       <section className={styles.hero} id="hero-section">
@@ -146,15 +138,6 @@ export default function HomePage() {
                 <span className={styles.highlightLetter}>A</span>rtificial <span style={{ whiteSpace: "nowrap" }}><span className={`${styles.highlightLetter} ${styles.highlightI}`}><span className={styles.letterI}>I</span><span className={styles.letterSmallI}>i</span></span>ntelligence</span><br />
                 and <span className={styles.highlightLetter}>D</span>eep <span className={styles.highlightLetter}>L</span>earning
               </h1>
-            </FadeIn>
-          </div>
-          <div className={styles.heroBottom}>
-            <FadeIn delay={150}>
-              <div className={styles.heroTypedContainer}>
-                <div className={styles.heroTyped} suppressHydrationWarning>
-                  <TypedText phrases={TYPED_PHRASES} />
-                </div>
-              </div>
             </FadeIn>
           </div>
         </div>

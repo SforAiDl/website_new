@@ -109,13 +109,13 @@ export default function PublicationsPage() {
   return (
     <main className={styles.main}>
       <FadeIn>
-        <div className={styles.sectionLabel}>
+        <div className={`${styles.sectionLabel} ${styles.hasTooltip}`}>
           <span className={styles.labelDot} />
           PUBLICATIONS
+          <span className={styles.tooltip}>
+            Note: This is a non-exhaustive list of publications authored by members during their time at SAiDL.
+          </span>
         </div>
-        <p className={styles.disclaimer}>
-          * Note: This is a non-exhaustive list of publications authored by members during their time at SAiDL.
-        </p>
       </FadeIn>
 
       <div className={styles.list}>
