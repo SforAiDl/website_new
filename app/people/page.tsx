@@ -12,25 +12,31 @@ interface Person {
   affiliation: string;
   image: string;
   href: string;
+  imagePosition?: string;
 }
 
 const MEMBERS: Person[] = [
-  { name: "Harshvardhan Mestha", role: "President", affiliation: "SSMP Scholar @ ESML (with TUD)", image: "/assets/people/harsh_updated.png", href: "https://harshvardhan-mestha.github.io/" },
-  { name: "Sasmit Datta", role: "Vice President", affiliation: "ML @ aion intelligence", image: "/assets/people/sasmit_new.png", href: "https://www.linkedin.com/in/sasmit-datta/" },
-  { name: "Sarang S", role: "Member", affiliation: "Research Intern @ UMD, SWE Intern @ Cisco", image: "/assets/people/sarang_s.png", href: "https://sarangs.pages.dev/" },
-  { name: "Aaron Menezes", role: "Member", affiliation: "Research Intern @ Brown University, Intern @ DeepChem", image: "/assets/people/aaron_menzees.jpg", href: "https://www.linkedin.com/in/aaron-rock-menezes/" },
-  { name: "Ankita Vaishnobi Bisoi", role: "Member", affiliation: "SWE Intern @ Google, Intern @ DeepChem", image: "/assets/people/ankita.jpg", href: "https://www.linkedin.com/in/ankita-vaishnobi-bisoi-061385239/" },
-  { name: "Ashmit Rana", role: "Member", affiliation: "Intern @ DE Shaw", image: "/assets/people/ashmit_rana.jpg", href: "https://www.linkedin.com/in/ashmitrana/" },
-  { name: "Aarush Rathore", role: "Member", affiliation: "Intern @ Maximor AI", image: "/assets/people/aarush_rathore.jpg", href: "https://www.linkedin.com/in/aarushrathore/" },
+  { name: "Soham Kalburgi", role: "President", affiliation: "Intern @ Sprinklr", image: "/assets/people/soham_kalburgi.jpg", href: "https://www.linkedin.com/in/sohamkalburgi/" },
+  { name: "Aditya Nagarsekar", role: "Vice President", affiliation: "Intern @ TUD, Intern @ Microsoft Research, India", image: "/assets/people/aditya_nagarsekar.jpg", href: "https://www.linkedin.com/in/aditya-nagarsekar-62b5761b6/" },
   { name: "Pratham Chheda", role: "Member", affiliation: "Intern @ GE", image: "/assets/people/pratham_chheda.jpg", href: "https://www.linkedin.com/in/pratham-chheda-6a066b235/" },
-  { name: "Soham Kalburgi", role: "General Secretary", affiliation: "Intern @ Sprinklr", image: "/assets/people/soham_kalburgi.jpg", href: "https://www.linkedin.com/in/sohamkalburgi/" },
-  { name: "Aditya Nagarsekar", role: "Member", affiliation: "Intern @ TUD, Upcoming Intern @ Microsoft Research, India", image: "/assets/people/aditya_nagarsekar.jpg", href: "https://www.linkedin.com/in/aditya-nagarsekar-62b5761b6/" },
+  { name: "Aarush Rathore", role: "Member", affiliation: "", image: "/assets/people/aarush_rathore.jpg", href: "https://www.linkedin.com/in/aarushrathore/" },
+  { name: "Ashmit Rana", role: "Member", affiliation: "Intern @ DE Shaw", image: "/assets/people/ashmit_rana.jpg", href: "https://www.linkedin.com/in/ashmitrana/" },
   { name: "Saatwik Tiwari", role: "Member", affiliation: "", image: "/assets/people/saatvik_tiwari.jpg", href: "https://www.linkedin.com/in/saatwik-tiwari-336b86301/" },
   { name: "Anish S", role: "Member", affiliation: "Research Intern @ MIT CSAIL, Intern @ INRIA", image: "/assets/people/anish_s.jpg", href: "https://www.linkedin.com/in/anish-sathyanarayanan-53b69029b/" },
   { name: "Kamal Manchenella", role: "Member", affiliation: "Intern @ Deep Forest Sciences", image: "/assets/people/kamal_manchenella.jpg", href: "https://www.linkedin.com/in/kamal-manchenella-13891928b/" },
+  { name: "Manit Tanwar", role: "Member", affiliation: "", image: "/assets/people/manit_tanwar.png", href: "" },
+  { name: "Parag Pal", role: "Member", affiliation: "", image: "/assets/people/parag_pal.png", href: "" },
+  { name: "Nidheesh Kannadasan", role: "Member", affiliation: "", image: "/assets/people/nidheesh.png", href: "" },
+  { name: "Adi Batra", role: "Member", affiliation: "", image: "/assets/people/adi_batra.jpeg", href: "" },
+  { name: "Devadarsh Nair", role: "Member", affiliation: "", image: "/assets/people/dev_nair.png", href: "", imagePosition: "center 20%" },
 ];
 
 const ALUMNI: Person[] = [
+  { name: "Harshvardhan Mestha", role: "Alumnus, Ex - President", affiliation: "SSMP Scholar @ ESML (with TUD)", image: "/assets/people/harsh_updated.png", href: "https://harshvardhan-mestha.github.io/" },
+  { name: "Sasmit Datta", role: "Alumnus, Ex - Vice President", affiliation: "ML @ aion intelligence", image: "/assets/people/sasmit_new.png", href: "https://www.linkedin.com/in/sasmit-datta/" },
+  { name: "Sarang S", role: "Alumnus", affiliation: "Research Intern @ UMD, SWE Intern @ Cisco", image: "/assets/people/sarang_s.png", href: "https://sarangs.pages.dev/" },
+  { name: "Aaron Menezes", role: "Alumnus", affiliation: "Research Intern @ Brown University, Intern @ DeepChem", image: "/assets/people/aaron_menzees.jpg", href: "https://www.linkedin.com/in/aaron-rock-menezes/" },
+  { name: "Ankita Vaishnobi Bisoi", role: "Alumnus", affiliation: "SWE Intern @ Google, Intern @ DeepChem", image: "/assets/people/ankita.jpg", href: "https://www.linkedin.com/in/ankita-vaishnobi-bisoi-061385239/" },
   { name: "Karan Bania", role: "Alumnus, Ex - President", affiliation: "MSML @ CMU", image: "/assets/people/karan.jpg", href: "https://karannb.github.io/" },
   { name: "Yash Bhisikar", role: "Alumnus, Ex - Vice President", affiliation: "Performance and Research @ e6data. Research Intern @ University of Manchester. Ex DAAD-WISE @ TUD.", image: "/assets/people/yash.jpg", href: "https://yashrb24.github.io/" },
   { name: "Shreyas V", role: "Alumnus", affiliation: "AI Research Scientist @ Mstack Chemicals, Intern @ DeepChem; Research Intern @ Kreiman Lab, Harvard, Krishnaswamy Lab, Yale", image: "/assets/people/shreyasv.png", href: "https://shreyasvinaya.github.io/folio/" },
@@ -77,7 +83,11 @@ function PersonCard({ person }: { person: Person }) {
   const inner = (
     <div className={styles.card}>
       <div className={styles.cardPhoto}>
-        <img src={person.image} alt={person.name} />
+        <img
+          src={person.image}
+          alt={person.name}
+          style={person.imagePosition ? { objectPosition: person.imagePosition } : undefined}
+        />
       </div>
       <h3 className={styles.cardName}>{person.name}</h3>
       <div className={styles.cardRole}>{person.role}</div>
