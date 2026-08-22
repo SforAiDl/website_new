@@ -18,6 +18,7 @@ const OUTREACH_DATA: YearSection[] = [
   {
     year: "2026",
     items: [
+      { title: "CTE Course: ML 101", details: 'Course Website: <a href="https://sforaidl.github.io/ml101">sforaidl.github.io/ml101</a>.' },
       { title: "Summer Induction Assignment 2026", details: 'Assignment can be found <a href="https://github.com/SforAiDl/SAiDL-Summer-2026-Induction-Assignment">here</a>. Join the Slack workspace <a href="https://join.slack.com/t/saidl/shared_invite/zt-3wjuirqd2-UbYGraYqvtGzNALRJesBJw">here</a>.' },
     ],
   },

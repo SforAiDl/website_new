@@ -117,15 +117,15 @@ export default function HomePage() {
   return (
     <>
       {/* Alert Banner */}
-      {/* <div className={styles.alert} id="alert-banner">
+      <div className={styles.alert} id="alert-banner">
         <div className={styles.alertContent}>
-          The 2026 Summer Induction Assignment is out.{" "}
-          <a href="https://github.com/SforAiDl/SAiDL-Summer-2026-Induction-Assignment" target="_blank">
-            View it here
+          SAiDL is organising ML 101 in collaboration with CTE.{" "}
+          <a href="https://bpgc-cte.org/catalog/63d579c8-74dd-4c6d-b5ca-ba4e80e23141" target="_blank">
+            Register here
           </a>
           .
         </div>
-      </div> */}
+      </div>
 
       {/* Hero */}
       <section className={styles.hero} id="hero-section">
