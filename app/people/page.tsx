@@ -16,7 +16,7 @@ interface Person {
 }
 
 const MEMBERS: Person[] = [
-  { name: "Soham Kalburgi", role: "President", affiliation: "Intern @ Sprinklr", image: "/assets/people/soham_kalburgi.jpg", href: "https://www.linkedin.com/in/sohamkalburgi/" },
+  { name: "Soham Kalburgi", role: "President", affiliation: "Upcoming Intern @ Apple, Ex - Intern @ Sprinklr", image: "/assets/people/soham_kalburgi.jpg", href: "https://www.linkedin.com/in/sohamkalburgi/" },
   { name: "Aditya Nagarsekar", role: "Vice President", affiliation: "Intern @ TUD, Intern @ Microsoft Research, India", image: "/assets/people/aditya_nagarsekar.jpg", href: "https://www.linkedin.com/in/aditya-nagarsekar-62b5761b6/" },
   { name: "Pratham Chheda", role: "Member", affiliation: "Intern @ GE", image: "/assets/people/pratham_chheda.jpg", href: "https://www.linkedin.com/in/pratham-chheda-6a066b235/" },
   { name: "Aarush Rathore", role: "Member", affiliation: "", image: "/assets/people/aarush_rathore.jpg", href: "https://www.linkedin.com/in/aarushrathore/" },
