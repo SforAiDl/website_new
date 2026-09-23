@@ -24,11 +24,11 @@ const MEMBERS: Person[] = [
   { name: "Saatwik Tiwari", role: "Member", affiliation: "", image: "/assets/people/saatvik_tiwari.jpg", href: "https://www.linkedin.com/in/saatwik-tiwari-336b86301/" },
   { name: "Anish S", role: "Member", affiliation: "Research Intern @ MIT CSAIL, Intern @ INRIA", image: "/assets/people/anish_s.jpg", href: "https://www.linkedin.com/in/anish-sathyanarayanan-53b69029b/" },
   { name: "Kamal Manchenella", role: "Member", affiliation: "Intern @ Deep Forest Sciences", image: "/assets/people/kamal_manchenella.jpg", href: "https://www.linkedin.com/in/kamal-manchenella-13891928b/" },
-  { name: "Manit Tanwar", role: "Member", affiliation: "", image: "/assets/people/manit_tanwar.png", href: "" },
-  { name: "Parag Pal", role: "Member", affiliation: "Research Intern @ FIU DaMRL", image: "/assets/people/parag_pal.png", href: "" },
-  { name: "Nidheesh Kannadasan", role: "Member", affiliation: "", image: "/assets/people/nidheesh.png", href: "" },
-  { name: "Adi Batra", role: "Member", affiliation: "", image: "/assets/people/adi_batra.jpeg", href: "" },
-  { name: "Devadarsh Nair", role: "Member", affiliation: "", image: "/assets/people/dev_nair.png", href: "", imagePosition: "center 20%" },
+  { name: "Manit Tanwar", role: "Member", affiliation: "", image: "/assets/people/manit_tanwar.png", href: "https://www.linkedin.com/in/manit-tanwar-a06748281/" },
+  { name: "Parag Pal", role: "Member", affiliation: "Research Intern @ FIU DaMRL", image: "/assets/people/parag_pal.png", href: "https://www.linkedin.com/in/paragpal/" },
+  { name: "Nidheesh Kannadasan", role: "Member", affiliation: "", image: "/assets/people/nidheesh.png", href: "https://www.linkedin.com/in/nidheesh-kannadasan-28a082310/" },
+  { name: "Adi Batra", role: "Member", affiliation: "", image: "/assets/people/adi_batra.jpeg", href: "https://www.linkedin.com/in/adi-b-143757378/" },
+  { name: "Devadarsh Nair", role: "Member", affiliation: "", image: "/assets/people/dev_nair.png", href: "https://www.linkedin.com/in/devadarsh-nair-488a0a284/", imagePosition: "center 20%" },
 ];
 
 const ALUMNI: Person[] = [
