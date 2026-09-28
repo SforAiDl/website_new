@@ -29,6 +29,9 @@ const MEMBERS: Person[] = [
   { name: "Nidheesh Kannadasan", role: "Member", affiliation: "", image: "/assets/people/nidheesh.png", href: "https://www.linkedin.com/in/nidheesh-kannadasan-28a082310/" },
   { name: "Adi Batra", role: "Member", affiliation: "", image: "/assets/people/adi_batra.jpeg", href: "https://www.linkedin.com/in/adi-b-143757378/" },
   { name: "Devadarsh Nair", role: "Member", affiliation: "", image: "/assets/people/dev_nair.png", href: "https://www.linkedin.com/in/devadarsh-nair-488a0a284/", imagePosition: "center 20%" },
+  { name: "Aditi Kharya", role: "Member", affiliation: "", image: "/assets/people/aditi_kharya.jpeg", href: "https://www.linkedin.com/in/aditi-kharya-303343287?originalSubdomain=in" },
+  { name: "Aarush Gupta", role: "Member", affiliation: "", image: "/assets/people/aarush_gupta.png", href: "https://www.linkedin.com/in/aarush-gupta-546b83187/" },
+  { name: "Vismay Shanbhag", role: "Member", affiliation: "", image: "/assets/people/vismay_shanbhag.jpeg", href: "https://www.linkedin.com/in/vismay-shanbhag-494157313/" },
 ];
 
 const ALUMNI: Person[] = [
