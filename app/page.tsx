@@ -116,17 +116,6 @@ const GOALS = [
 export default function HomePage() {
   return (
     <>
-      {/* Alert Banner */}
-      <div className={styles.alert} id="alert-banner">
-        <div className={styles.alertContent}>
-          SAiDL is organising ML 101 in collaboration with CTE.{" "}
-          <a href="https://bpgc-cte.org/catalog/63d579c8-74dd-4c6d-b5ca-ba4e80e23141" target="_blank">
-            Register here
-          </a>
-          .
-        </div>
-      </div>
-
       {/* Hero */}
       <section className={styles.hero} id="hero-section">
         <HeroReveal />

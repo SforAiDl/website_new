@@ -1,36 +1,3 @@
-/* ── Alert Banner ── */
-.alert {
-  width: 100%;
-  background-color: var(--accent);
-  color: white;
-  padding: 0.6rem 1rem;
-  text-align: center;
-  position: sticky;
-  top: 64px;
-  z-index: 1001;
-  font-size: 0.95rem;
-  font-weight: 500;
-  letter-spacing: -0.01em;
-}
-
-.alert ::selection,
-.alert *::selection {
-  background-color: rgba(255, 255, 255, 0.3);
-  color: #fff;
-}
-
-.alertContent a {
-  color: #ffffff;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  font-weight: 600;
-}
-
-.alertContent a:hover {
-  opacity: 1;
-  color: #ffe5ff;
-}
-
 /* ── Section Label (Delta-inspired) ── */
 .sectionLabel {
   display: flex;
