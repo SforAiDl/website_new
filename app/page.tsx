@@ -117,7 +117,7 @@ export default function HomePage() {
   return (
     <>
       {/* Alert Banner */}
-      <div className={styles.alert} id="alert-banner">
+      {/* <div className={styles.alert} id="alert-banner">
         <div className={styles.alertContent}>
           Applications for SAiDL Season of Code 2026 are now open!{" "}
           <a href="https://forms.gle/5aqgjDowL3RgpsDf9" target="_blank" rel="noopener noreferrer">
@@ -125,7 +125,7 @@ export default function HomePage() {
           </a>
           .
         </div>
-      </div>
+      </div> */}
 
       {/* Hero */}
       <section className={styles.hero} id="hero-section">
